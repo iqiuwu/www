@@ -1,0 +1,221 @@
+
+.pTB {
+	BORDER-RIGHT: #d8d3f3 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d8d3f3 1px solid; PADDING-LEFT: 5px; BACKGROUND: #e8e5f8; BORDER-LEFT: #d8d3f3 1px solid; WIDTH: 180px; BORDER-BOTTOM: #d8d3f3 1px solid; HEIGHT: 24px
+}
+.pTD {
+	BORDER-RIGHT: #cac4e8 1px solid; BORDER-LEFT: #cac4e8 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #cac4e8 1px solid
+}
+.pTD_L {
+	BORDER-TOP: #cac4e8 1px solid; BORDER-LEFT: #cac4e8 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.pTD_R {
+	BORDER-RIGHT: #cac4e8 1px solid; BORDER-TOP: #cac4e8 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.pbg {
+	BACKGROUND: #f7f5ff
+}
+.aTB {
+	BORDER-RIGHT: #bae6c5 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #bae6c5 1px solid; PADDING-LEFT: 5px; BACKGROUND: #e3f4e7; BORDER-LEFT: #bae6c5 1px solid; WIDTH: 180px; BORDER-BOTTOM: #bae6c5 1px solid; HEIGHT: 24px
+}
+.aTD {
+	BORDER-RIGHT: #bae6c5 1px solid; BORDER-TOP: 0px; BORDER-LEFT: #bae6c5 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #bae6c5 1px solid
+}
+.aTD_L {
+	BORDER-TOP: #bae6c5 1px solid; BORDER-LEFT: #bae6c5 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.aTD_R {
+	BORDER-RIGHT: #bae6c5 1px solid; BORDER-TOP: #bae6c5 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.abg {
+	BACKGROUND: #e3f4e7
+}
+.wTB {
+	BORDER-RIGHT: #ffd5a4 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ffd5a4 1px solid; PADDING-LEFT: 5px; BACKGROUND: #fff0dc; BORDER-LEFT: #ffd5a4 1px solid; WIDTH: 180px; BORDER-BOTTOM: #ffd5a4 1px solid; HEIGHT: 24px
+}
+.wTD {
+	BORDER-RIGHT: #ffd5a4 1px solid; BORDER-TOP: 0px; BORDER-LEFT: #ffd5a4 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #ffd5a4 1px solid
+}
+.wTD_L {
+	BORDER-TOP: #ffd5a4 1px solid; BORDER-LEFT: #ffd5a4 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.wTD_R {
+	BORDER-RIGHT: #ffd5a4 1px solid; BORDER-TOP: #ffd5a4 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.wbg {
+	BACKGROUND: #fff0dc
+}
+.bTB {
+	BORDER-RIGHT: #b0dbec 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #b0dbec 1px solid; PADDING-LEFT: 5px; BACKGROUND: #d6ecf7; BORDER-LEFT: #b0dbec 1px solid; WIDTH: 180px; BORDER-BOTTOM: #b0dbec 1px solid; HEIGHT: 24px
+}
+.bTD {
+	BORDER-RIGHT: #b0dbec 1px solid; BORDER-LEFT: #b0dbec 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #b0dbec 1px solid
+}
+.bTD_L {
+	BORDER-TOP: #b0dbec 1px solid; BORDER-LEFT: #b0dbec 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.bTD_R {
+	BORDER-RIGHT: #b0dbec 1px solid; BORDER-TOP: #b0dbec 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.bbg {
+	BACKGROUND: #d6ecf7
+}
+.gTB {
+	BORDER-RIGHT: #d5e6b9 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d5e6b9 1px solid; PADDING-LEFT: 5px; BACKGROUND: #e5f8cb; BORDER-LEFT: #d5e6b9 1px solid; WIDTH: 180px; BORDER-BOTTOM: #d5e6b9 1px solid; HEIGHT: 24px; TEXT-ALIGN: center
+}
+.gTD {
+	BORDER-RIGHT: #d5e6b9 1px solid; BORDER-LEFT: #d5e6b9 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #d5e6b9 1px solid
+}
+.gTD_L {
+	BORDER-TOP: #d5e6b9 1px solid; BORDER-LEFT: #d5e6b9 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.gTD_R {
+	BORDER-RIGHT: #d5e6b9 1px solid; BORDER-TOP: #d5e6b9 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.gbg {
+	BACKGROUND: #e5f8cb
+}
+.oTB {
+	BORDER-RIGHT: #f2d1ca 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #f2d1ca 1px solid; PADDING-LEFT: 5px; BACKGROUND: #ffe7dd; BORDER-LEFT: #f2d1ca 1px solid; WIDTH: 180px; BORDER-BOTTOM: #f2d1ca 1px solid; HEIGHT: 24px
+}
+.oTD {
+	BORDER-RIGHT: #f2d1ca 1px solid; BORDER-LEFT: #f2d1ca 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #f2d1ca 1px solid
+}
+.oTD_L {
+	BORDER-TOP: #f2d1ca 1px solid; BORDER-LEFT: #f2d1ca 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.oTD_R {
+	BORDER-RIGHT: #f2d1ca 1px solid; BORDER-TOP: #f2d1ca 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.obg {
+	BACKGROUND: #ffe7dd
+}
+.rTB {
+	BORDER-RIGHT: #f9cdde 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #f9cdde 1px solid; PADDING-LEFT: 5px; BACKGROUND: #fcdeea; BORDER-LEFT: #f9cdde 1px solid; WIDTH: 180px; BORDER-BOTTOM: #f9cdde 1px solid; HEIGHT: 24px
+}
+.rTD {
+	BORDER-RIGHT: #f9cdde 1px solid; BORDER-LEFT: #f9cdde 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #f9cdde 1px solid
+}
+.rTD_L {
+	BORDER-TOP: #f9cdde 1px solid; BORDER-LEFT: #f9cdde 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.rTD_R {
+	BORDER-RIGHT: #f9cdde 1px solid; BORDER-TOP: #f9cdde 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.rbg {
+	BACKGROUND: #fcdeea
+}
+.yTB {
+	BORDER-RIGHT: #efeaaa 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #efeaaa 1px solid; PADDING-LEFT: 5px; BACKGROUND: #faf1d4; BORDER-LEFT: #efeaaa 1px solid; WIDTH: 180px; BORDER-BOTTOM: #efeaaa 1px solid; HEIGHT: 24px
+}
+.yTD {
+	BORDER-RIGHT: #efeaaa 1px solid; BORDER-LEFT: #efeaaa 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #efeaaa 1px solid
+}
+.yTD_L {
+	BORDER-TOP: #efeaaa 1px solid; BORDER-LEFT: #efeaaa 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.yTD_R {
+	BORDER-RIGHT: #efeaaa 1px solid; BORDER-TOP: #efeaaa 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.ybg {
+	BACKGROUND: #faf1d4
+}
+.mTB {
+	BORDER-RIGHT: #ebebeb 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ebebeb 1px solid; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(images/mbg.gif); BORDER-LEFT: #ebebeb 1px solid; WIDTH: 180px; BORDER-BOTTOM: #ebebeb 1px solid; HEIGHT: 24px
+}
+.mTD {
+	BORDER-RIGHT: #ebebeb 1px solid; BORDER-LEFT: #ebebeb 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #ebebeb 1px solid
+}
+.mTD_L {
+	BORDER-TOP: #ebebeb 1px solid; BORDER-LEFT: #ebebeb 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.mTD_R {
+	BORDER-RIGHT: #ebebeb 1px solid; BORDER-TOP: #ebebeb 1px solid; WIDTH: 30px; LINE-HEIGHT: 12px; HEIGHT: 12px
+}
+.tdpc {
+	TEXT-ALIGN: center
+}
+.div24 {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+#TbRng TD {
+	FONT-SIZE: 12px; BACKGROUND: #faf1d4; HEIGHT: 24px
+}
+#TbRng TH {
+	FONT-SIZE: 12px; BACKGROUND: #faf1d4; HEIGHT: 24px
+}
+#TbRng TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 300; PADDING-BOTTOM: 5px; PADDING-TOP: 6px; TEXT-ALIGN: left
+}
+#TbRng .tdpc {
+	TEXT-ALIGN: center
+}
+.tbo#TbRng {
+	FLOAT: left; MARGIN: 0px 10px 15px; HEIGHT: 310px
+}
+.tdpr {
+	TEXT-ALIGN: right
+}
+.tbi {
+	WIDTH: 96%
+}
+.tbi TH {
+	FONT-WEIGHT: 100; FONT-SIZE: 12px; HEIGHT: 23px
+}
+.tbi TH.tdpc {
+	TEXT-ALIGN: center
+}
+.tbi TD {
+	BORDER-TOP: #e4e4e4 1px solid; HEIGHT: 24px
+}
+.tbo {
+	FLOAT: left; MARGIN: 0px 4px 15px; HEIGHT: 330px
+}
+#DivPl IFRAME {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10px; PADDING-TOP: 0px
+}
+.btitle {
+	FONT-WEIGHT: 600; FONT-SIZE: 13px; COLOR: #333; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: "ËÎÌו",Arial
+}
+A.tsn {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 90px; WORD-BREAK: keep-all; LINE-HEIGHT: 15px; HEIGHT: 15px; TEXT-OVERFLOW: ellipsis
+}
+#ft {
+	CLEAR: both; BORDER-TOP: #f9f9f9 1px solid; MARGIN: 10px; LINE-HEIGHT: 20px; PADDING-TOP: 20px; TEXT-ALIGN: center
+}
+#ft {
+	FONT-SIZE: 12px; COLOR: #77c; FONT-FAMILY: Arial; WHITE-SPACE: nowrap
+}
+#ft {
+	FONT-SIZE: 12px; COLOR: #77c; FONT-FAMILY: Arial; WHITE-SPACE: nowrap
+}
+.title_P {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 30px; FONT-WEIGHT: 900; FONT-SIZE: 14px; Z-INDEX: 99; BACKGROUND: url(/Images/BookList/ter.gif) #fff no-repeat 8px center; LEFT: 20px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; BORDER-LEFT: #cccccc 1px solid; WIDTH: 136px; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; POSITION: absolute; TOP: 205px; HEIGHT: 19px; TEXT-DECORATION: none
+}
+A.p14 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 22px
+}
+.STYLE1 {
+	FONT-WEIGHT: bold
+}
+
+.ck1{font-weight: bold }
+
+.ck2{font-weight:100; cursor: pointer; text-decoration: underline;}
+
+.but1{
+    background-color: #DDF2FF;
+    border: #83b0e1 1px solid;
+    color: #000000;
+    height: 20px;
+    width:100px;
+}
+.but2{
+    background-color: #d8d3f3;
+    border: #cac4e8 1px solid;
+    color: #000000;
+    height: 20px;
+    width:100px;
+}

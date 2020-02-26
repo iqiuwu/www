@@ -1,0 +1,35 @@
+/* CSS Document */
+
+* { font-size: 12px; color:#666666; margin: 0px; padding: 0px; border: none; line-height:24px;font-family: "微软雅黑"!important; font-family:"宋体";}
+a {cursor: pointer; color:#00F; text-decoration: underline; }
+A:hover {color:#eb6000;}
+body{ background-color:#FFFFFF ; margin:0px auto; }
+div{margin:auto;clear: none;}
+ul{	list-style-type: none;text-align: left;}
+li{line-height: 24px;}
+.clear{clear:both; height:0; line-height:0; font-size:0; overflow:hidden;}
+.top8{ margin-top:8px;}
+/*头部 css*/
+.Hander{ height:24px; width:auto; padding:5px 10px; text-align:right;}
+
+/*内容 css*/
+.Content{width:530px; margin:0 auto;}
+.Content_logo{margin-top:50px; text-align:center;}
+.Content_menu{width:auto; height:28px; padding:20px 0 5px 0;}
+.Content_menu li{float:left; margin:0 6px;}
+.Content_menu li a{color:#00F; font-size:14px; text-decoration: underline;}
+.Content_menu .a1{text-decoration:none; color:#000; font-weight:bold;}
+.Content_ss{width:auto;}
+.Content_ss .test{ width:400px; height:20px; font:14px Arial; line-height:20px; border:1px solid #CCCCCC; padding:2px;}
+.Content_ss .button{width:78px; height:26px; background:url(images/68.gif) no-repeat; border:0; color:#000000;}
+.Content_ss .jz{ padding:20px 120px 20px 5px; text-align:center;}
+.Content_ss .jz2{ padding:5px 0 0 10px;width:600px;}
+.Content_ss .jz3{ padding:5px 0 0 10px;width:600px;}
+.new{ font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #FF3300; }
+.Content_gg{ width:auto; text-align:center;}
+.Content_gg img{ width:576px; height:90px; }
+.foot{ margin-top:60px}
+.foot a{color:#666666;text-decoration: none;}
+.foot li{text-align:center;}
+.foot .d01{ border-bottom:1px solid #CCCCCC;}
+.foot .d02{ color:#999999;}

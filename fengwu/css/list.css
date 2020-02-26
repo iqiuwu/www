@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word;
+}
+
+body,input,button,select,textarea {
+	font: 12px/1.5 Tahoma,Helvetica,SimSun,sans-serif;
+	color: #444;
+}
+textarea {
+	resize: none;
+}
+table {
+	empty-cells: show;
+	border-collapse: collapse;
+}
+caption,th {
+	text-align: left;
+	font-weight: 400;
+}
+ul li,.xl li {
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 1em;
+}
+em,cite {
+	font-style: normal;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a: hover {
+	text-decoration: underline;
+}
+a img {
+	border: none;
+}
+body { background: #FFF url(bgimg.jpg) no-repeat 50% 0; }
+#nv { background-color: #0053B9; background-image: url(nv.png); }
+	#nv li { background-image: url(nv_a.png) !important; }
+	#nv li.a { background: #0075DB url(nv_a.png) no-repeat 0 100%; }
+.novel {background:none repeat scroll 0 0 #F8F8F8; border: 1px solid #CDCDCD;}
+.novel a {color:#004e00;text-decoration:none}
+.novel a:hover {color:#c00;position:relative;top:1px;left:1px;}
+.novel_nav { padding: 0 10px; height: 31px; border-top: 1px solid #FFF; border-left: 1px solid #FFF; border-right: 1px solid #FFF; border-bottom: 1px solid #c0c0c0; background-color:#f0f0f0; line-height: 31px;color:#004e00;}
+.novel_nav em {padding:0 2px;}
+.novel_head {padding-top:10px; text-align:center}
+.novel_head .novel_name {font-size:26px; padding-bottom:5px; color:#DA1A27; font-family:"¡• È"; font-weight:400;}
+.novel_head .novel_info {border-top:1px dashed #CCCCCC; color:#999999; display:inline-block; margin-top:-1px; padding-top:10px; font-size:12px;}
+.novel_volume {clear:both; width:96%; margin:15px 2% 22px 2%;}
+.novel_volume .novel_title {float:left; width:100%; height:30px; margin:20px 0; background-color:#f0f0f0; border-top:1px solid #c0c0c0}
+.novel_volume .novel_title h2 {font-size:14px;line-height:30px;text-indent:0;}
+.novel_volume .novel_title h2 span {color:#FFFFFF;float:left;font-size:16px;text-align:center;width:26px;background:url(/images/title.png) no-repeat;}
+.novel_volume .novel_list {float:left; width:100%; margin-bottom:10px}
+.novel_volume .novel_list ul {margin:0;padding:0;list-style-type:none}
+.novel_volume .novel_list ul li {float:left;width:25%;line-height:22px; height:22px;overflow:hidden;text-indent:12px;margin-top:5px;border-bottom:1px dashed #999;}
+.novel_volume .novel_list .novel_num {float:left; mini-width:30px}
+.novel_volume .novel_list ul li:hover {background:url(/images/novel_bg.png);}
+.novel_action { padding: 0 10px; clear:both; height: 31px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; border-right: 1px solid #FFF; border-top: 1px solid #c0c0c0; background-color:#f0f0f0; line-height: 31px; color:#004e00;}
+
+.z {
+	float: left;
+}
+.y {
+	float: right;
+}
+.pgs #newspecial,.pgs #newspecialtmp,.pgs #post_reply,.pgs #post_replytmp {
+	float: left;
+	margin-right: 5px;
+}
+.wp {
+	margin: 0 auto;
+	width: 950px;
+}
+#wp .wp {
+	width: auto;
+}
+#hd {
+	margin-bottom: 10px;
+	border-bottom: 0 solid #C2D5E3;
+}
+#hd .wp {
+	padding: 10px 0 0;
+}
+#nv_forum .mn .ch label,#nv_forum.pg_viewthread .ch label {
+	background-position: 100% -150px;
+	color: #FFF;
+	text-shadow: 1px 1px 2px #004FB5;
+}
+#nv_group .mn .ch label,#nv_group.pg_viewthread .ch label {
+	background-position: 100% -200px;
+	color: #FFF;
+	text-shadow: 1px 1px 2px #609;
+}
+#nv_home .mn .ch label,#nv_home .w .ch label,#nv_forum .mn .ch label.home,#nv_userapp .mn .ch label,#nv_userapp .w .ch label {
+	background-position: 100% -100px;
+	color: #FFF;
+	text-shadow: 1px 1px 2px #F30;
+}
+#nv_portal .mn .ch label,#nv_forum .mn .ch label.portal {
+	background-position: 100% -50px;
+	color: #FFF;
+	text-shadow: 1px 1px 2px #A00;
+}
+#footer{width:950px;margin:0 auto;text-align:center;line-height:21px;padding:0 0 40px 0;font-family:Arial;position:relative;}
+#foot_Navi{text-align:center;background:#f6f6f6;border-bottom:1px solid #E1E1E1;line-height:25px;padding:0 10px;margin-bottom:10px;}
+#foot_Navi a{margin:0 30px;}
+#footer p.Copyright *,#footer p.black *{color:#000;text-decoration:none;}#footer .police{position:absolute;top:60px;right:80px;}
+
+.zhuantie #kaixin{background:url("/images/ico_kaixin.gif") no-repeat scroll 0 -1px transparent;}
+.zhuantie a:link, .zhuantie a:visited{color:#454545;margin-left:2px;padding:2px 2px 2px 17px;}
+.zhuantie a:hover{color:#fe8a01;}
+.zhuantie #renren{background:url("/images/ico_renren.gif") no-repeat scroll 0 0 transparent;}
+.zhuantie #douban{background:url("/images/ico_douban.gif") no-repeat scroll 0 0 transparent;}
+.zhuantie #bai{background:url("/images/ico_bai.gif") no-repeat scroll 0 1px transparent;}
+.zhuantie #sina{background:url("/images/ico_sina.gif") no-repeat scroll 0 -1px transparent;}
+.novel_list a:visited{color:purple;text-decoration:none}

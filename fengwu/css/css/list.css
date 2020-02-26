@@ -1,0 +1,72 @@
+
+#listl{float:left; width:730px; overflow:hidden;}
+#listr{float:right; width:220px;}
+.atopb{clear:both;}
+.alist{ padding-top:0;clear:both; margin-top:5px; border:1px solid #c8c8c8;_height: 0;}
+.listone{ margin:0; text-align:left; padding:3px 0pc 6px 6px; height:auto; border-bottom:1px solid #DDD;}
+.listtop{ padding:3px 0 0 6px; border-bottom:1px solid #DDD;}
+.apic, .apicr{float:left;}
+.apic img{ width:135px; height:170px;}
+.apicr img{width:60px; height:80px;}
+.atxts{ float:left;margin-left:12px; width:320px;text-align:left;}
+.atxtr{ float:left;margin-left:12px; width:154px;text-align:left;}
+.atxt{ float:left;margin-left:12px; width:560px;}
+.atxtr h6, .atxts h6, .atxt h6{ text-align:left; height:25px; line-height:25px; padding-left:20px; color:#F60; font-size:12px; border-bottom:1px dotted #c8c8c8; background:url(images/icon_book.gif) 0 3px no-repeat;}
+.atxtr h6 a, .atxts h6 a, .atxt h6 a{color:#F60;float:left;}
+.atxt h6 .point{ float:right; font:bold 14px/25px verdana; color:#F60;}
+.atxt h6 .point .b{ font-size:20px;}
+.atxts p, .atxt p{ line-height:21px; color:#666;}
+.atxts strong, .atxt strong{ color:#333;}
+.atxts .cate, .atxt .cate{ position:relative;}
+.atxts .cate span, .atxt .cate span{ position:absolute; top:0; right:12px;}
+.atxts .cate span a, .atxt .cate span a{ color:#000000;}
+.atxts .intro, .atxt .intro{ padding-left:36px;}
+.atxts .intro span, .atxt .intro span{ margin-left:-36px;}
+
+.ulr {}
+.ulr li{ position:relative; display:block; width:100%; overflow:hidden; height:23px; line-height:23px;}
+.ulr li span{ font-family:simsun; color:#CCC;}
+.ulr li strong{ position:absolute; top:0; right:0; font-weight:normal; color:#BBB;}
+.ulr li:hover span{ color:#F60;}
+
+.atopl{ float:left; width:480px;}
+.atopr{ float:right; width:240px;}
+.lz{ padding-top:2px; border:1px solid #c8c8c8;_height: 0;}
+.ph{ padding-top:2px; border:1px solid #c8c8c8;_height: 0;}
+.phs{ border-bottom:1px solid #c8c8c8;padding-top:4px;padding-bottom:2px;}
+.phs ul{ padding-top:1px;}
+.ph h3,.lz h3, .finish h3{border-bottom:1px solid #c8c8c8;_height: 0;height:30px; line-height:30px;background:url(images/title_commend_box.png) left bottom repeat-x;}
+.tltxt{padding:5px;}
+.apage{margin:3px 5px 3px 0px;}
+
+	.atopb .atopl .lz .tltxt .apic img{ width:160px; height:194px;}
+	.atopb .atopl .lz .tltxt .atxts{ margin-left:12px; width:284px; line-height:21px;}
+	.atopb .atopl .lz .tltxt .atxts h6{ margin-bottom:6px; height:25px; line-height:25px; font-size:14px; background-position:0 4px;}
+
+	.atopb .atopl{ float:left; width:480px;}
+	.atopb .atopl .finish{ margin-top:10px;}
+	.atopb .atopl .finish h3{ text-indent:8px; background:url(images/title_commend_box.png) left bottom repeat-x;}
+	.atopb .atopl .finish h3 span{ _margin-top:3px; margin-right:3px; display:inline-block; *display:inline; zoom:1; overflow:hidden; width:16px; height:16px; background:url(/images/icon_jgz.gif) no-repeat;}
+	.mod {border:1px solid #c8c8c8;height:278px}
+	.mod .body{ padding:6px;}
+	.mod ul li{ overflow:hidden; height:21px; line-height:21px;}
+	.ultop2 LI {TEXT-ALIGN: left; LINE-HEIGHT: 140%; MARGIN: 4px 6px; COLOR: #909090}
+	.ultop2 LI A {COLOR: #333333}
+	.atopb .mod .tltxt{ margin-top:6px; padding:0 0 6px 0; *padding:0; border-bottom:1px dotted #A3DAED;}
+	.apic{ float:left; padding:1px; border:1px solid #c8c8c8;}
+	.atopb .tltxt .apic{ padding:1px; border:1px solid #c8c8c8;}
+	.atopb .mod .tltxt .atxts{ float:left; margin-left:6px; width:136px; line-height:17px; color:#888;}
+	.atopb .mod .tltxt h6{ overflow:hidden; height:23px; font:bold 12px/23px arial;}
+	.atopb .mod .tltxt h6 a{ color:#F30;}
+	.atopb .finish .tltxt{ float:left; margin:0; padding:0; width:49%; border:none;}
+	.atopb .finish .tltxt .apic img{ width:80px; height:110px;}
+	.atopb .finish .tltxt .atxts{ width:136px;}
+	.atopb .mod .tltxt .atxts h6{ border-bottom:1px dotted #c8c8c8; background:url(images/icon_book.gif) 0 3px no-repeat;}
+	.atopb .finish .tltxt .atxts p{ padding-top:6px;}
+	.atopb .finish .r{ float:right;}
+	.atopb .atopr{ float:right; width:240px;}
+	.atopb .atopr h3{ text-indent:8px; background:url(images/title_commend_box.png) left bottom repeat-x;}
+	.atopb .atopr h3 span{ _margin-top:3px; margin-right:3px; display:inline-block; *display:inline; zoom:1; overflow:hidden; width:16px; height:16px; background:url(/images/icon_rank.gif) no-repeat;}
+	.atopb .atopr h6{ margin-bottom:5px;}
+	.atopb .atopr ul{ padding-left:20px; background:url(images/bg_rank.gif) 6px 4px no-repeat;}
+	.atopb .atopr .body h3{ margin:0 -6px; border-top:1px solid #D2DEE7; background:url(images/title_commend_box.png) left bottom repeat-x;}

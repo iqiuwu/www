@@ -1,0 +1,38 @@
+
+.yellow{ color:#b18850}
+.total_comm{ clear:both; padding-bottom:10px}
+.total_comm .comm_title{padding:7px 10px 0 8px; height:20px; background-color:#e8f5fe; border:solid 1px #a9c9e2}
+.total_comm .comm_title .h2{font-weight:bold; font-size:12px;  color:#2a427e; float:left; }
+.total_comm .comm_title .message{width:250px; padding-top:1px; text-align:right; float:right}
+.look_comm{ font-size:12px; margin-left:7px; font-weight:normal; color:#1a66b3}/*07.11.20new*/
+.bar_5_0{padding-top:0;display:none;height:0px;}
+.total_comm  .p_number{ width:42px; margin-left:3px; float:left}
+.total_comm  .message{width:250px; height:15px; padding-top:3px; text-align:right; float:right}
+.hand{cursor:pointer;}
+.comm_list{ clear:both;  padding:15px 8px 4px 10px}
+.comm_list a{color:#1a66b3; text-decoration:none}
+.comm_list a:hover{color:#1a66b3; text-decoration:underline}
+.comm_list .reduce_list_b{ padding-bottom:15px}/*07.11.20modify */
+.comm_list .buyer{ width:51px; float:left; padding-left:5px;}
+.comm_list .buyer img{ width:48px; height:48px; border:solid 1px #b4b4b4}
+.comm_list .buyer p{  margin:0;padding-top:7px;word-break:break-all;word-wrap:break-word; overflow:hidden;}/*07.8.1modify*/
+.comm_list .buyer_comm{width:631px; float:left}
+.comm_list .buyer_comm .top_bg{width:631px; height:16px; background:url(comm_bg_top.gif) no-repeat right top; overflow:hidden; float:left}
+.comm_list .buyer_comm .center_topbg{width:630px; border-right:solid 1px #efd1d1; background:url(comm_bg_left.gif) no-repeat 1px top}
+.comm_list .title_time{ padding:0px 12px 2px 22px;}
+.comm_list .title_time .label_p{ width:17px; height:18px; padding-right:5px; float:left}
+
+.comm_list .title_time .time{  text-align:right; color:#9b9b9b; padding-top:3px; float:left}
+.comm_list .buyer_comm .center_border{font-size:10pt; clear:both; width:575px; padding:0 18px 15px 23px; line-height:20px; margin-left:13px; border-left:solid 1px #efd1d1; border-right:solid 1px #efd1d1; word-break:break-all;word-wrap:break-word; overflow:hidden}
+.comm_list .buyer_comm .bottom_bg{width:631px; height:6px; background:url(comm_bg_bottom.gif) no-repeat right top; overflow:hidden;float:left}
+
+/*
+.comm_list .reading{ height:15px; padding:5px 12px 0 43px}
+.comm_list .reading .reply{ float:left}
+.comm_list .reading .good_use{ float:right; color:#9b9b9b}
+*/
+
+
+
+
+
