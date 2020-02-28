@@ -139,14 +139,14 @@ function showbook(){
 			var __17mb_sid = parseInt(books[i][0]/1000);		
 			bookhtml+='<li>';
 			bookhtml+='<p class="p2"><a href="/'+__17mb_sid+'/'+books[i][0]+'/" style="font-weight:bold;color:#94C33A">'+books[i][2]+'</a></p>';
-			bookhtml+='<p class="p3">¿´¹ı£º<a href="/'+__17mb_sid+'/'+books[i][0]+'/'+books[i][1]+'.html" >'+books[i][3]+'</a></p>';
-			bookhtml+='<p class="p4"><a href="javascript:removebook(\''+books[i][0]+'\')">É¾³ı¼ÇÂ¼</a></p>'
+			bookhtml+='<p class="p3">çœ‹è¿‡ï¼š<a href="/'+__17mb_sid+'/'+books[i][0]+'/'+books[i][1]+'.html" >'+books[i][3]+'</a></p>';
+			bookhtml+='<p class="p4"><a href="javascript:removebook(\''+books[i][0]+'\')">åˆ é™¤è®°å½•</a></p>'
 			bookhtml+='</li>';	
 		}
 		showbook.innerHTML=bookhtml+"</ul>";
 	}
 	else{
-		showbook.innerHTML=bookhtml+"»¹Ã»¿ªÊ¼ÔÄ¶Á£¡</ul>";
+		showbook.innerHTML=bookhtml+"è¿˜æ²¡å¼€å§‹é˜…è¯»ï¼</ul>";
 	}
 	
 
@@ -160,7 +160,7 @@ function removebook(k){
 
 	
 function yuedu(){
-	//document.write("<a href='javascript:showbook();' target='_self'>µã»÷²é¿´ÔÄ¶Á¼ÇÂ¼</a>");
+	//document.write("<a href='javascript:showbook();' target='_self'>ç‚¹å‡»æŸ¥çœ‹é˜…è¯»è®°å½•</a>");
 	showbook();
 }
 

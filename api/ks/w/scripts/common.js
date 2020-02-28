@@ -1,4 +1,4 @@
-//È¡µÃÒ»¸ö¶ÔÏó£¬Ïàµ±ÓÚgetElementById()
+//å–å¾—ä¸€ä¸ªå¯¹è±¡ï¼Œç›¸å½“äºgetElementById()
 function $_() {
   var elements = new Array();
   for (var i = 0; i < arguments.length; i++) {
@@ -10,17 +10,17 @@ function $_() {
   }
   return elements;
 }
-//¼æÈİjquery
+//å…¼å®¹jquery
 if(typeof $ == "undefined") $ = $_;
 
-//°ÑËü½ÓÊÕµ½µÄµ¥¸öµÄ²ÎÊı×ª»»³ÉÒ»¸öArray¶ÔÏó¡£
+//æŠŠå®ƒæ¥æ”¶åˆ°çš„å•ä¸ªçš„å‚æ•°è½¬æ¢æˆä¸€ä¸ªArrayå¯¹è±¡ã€‚
 function $A(list){
 	var arr = [];
 	for (var i=0,len=list.length; i<len; i++){arr[i] = list[i];}
 	return arr;
 }
 
-//³£ÓÃº¯ÊıÀ©Õ¹
+//å¸¸ç”¨å‡½æ•°æ‰©å±•
 var Method = {
 	Element	: function(){
 		this.hide = function(){this.style.display="none"; return this;};
@@ -49,7 +49,7 @@ var Method = {
 Method.Array.apply(Array.prototype);
 Method.String.apply(String.prototype);
 
-//cookie´¦Àí
+//cookieå¤„ç†
 var Cookie = {
     get : function(n){
 	    var dc = "; "+document.cookie+"; ";
@@ -78,9 +78,9 @@ var Cookie = {
     }
 }
 
-//formÏà¹Øº¯Êı
+//formç›¸å…³å‡½æ•°
 var Form = {
-	//°Ñ±í¸ñÄÚÈİ×ª»¯³Éstring
+	//æŠŠè¡¨æ ¼å†…å®¹è½¬åŒ–æˆstring
   serialize: function(form) {
     var elements = Form.getElements($_(form));
     var queryComponents = new Array();
@@ -90,7 +90,7 @@ var Form = {
     }
     return queryComponents.join('&');
   },
-  //È¡µÃ±íµ¥ÄÚÈİÎªÊı×éĞÎÊ½
+  //å–å¾—è¡¨å•å†…å®¹ä¸ºæ•°ç»„å½¢å¼
   getElements: function(form) {
     form = $_(form);
     var elements = new Array();
@@ -101,7 +101,7 @@ var Form = {
     }
     return elements;
   },
-  //disable±íµ¥ËùÓĞÄÚÈİ
+  //disableè¡¨å•æ‰€æœ‰å†…å®¹
   disable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -110,7 +110,7 @@ var Form = {
       element.disabled = 'true';
     }
   },
-  //enable±íµ¥ËùÓĞÄÚÈİ
+  //enableè¡¨å•æ‰€æœ‰å†…å®¹
   enable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -118,13 +118,13 @@ var Form = {
       element.disabled = '';
     }
   },
-  //Reset±íµ¥
+  //Resetè¡¨å•
   reset: function(form) {
     $_(form).reset();
   }
 }
 
-//formÀïÃæÔªËØ¶¨Òå
+//formé‡Œé¢å…ƒç´ å®šä¹‰
 Form.Element = {
   serialize: function(element) {
     element = $_(element);
@@ -202,10 +202,10 @@ Form.Element.Serializers = {
   }
 }
 
-//È¡formÀïÃæÎï¼şµÄÖµ£¬µÈÍ¬ÓÚForm.Element.getValue()
+//å–formé‡Œé¢ç‰©ä»¶çš„å€¼ï¼Œç­‰åŒäºForm.Element.getValue()
 var $F = Form.Element.getValue;
 
-//ajax´¦Àí
+//ajaxå¤„ç†
 function jieqi_ajax() {
 	this.init = function() {
 		this.handler = null;
@@ -363,7 +363,7 @@ function jieqi_ajax() {
 	this.init();
 }
 
-//ajax¹¦ÄÜ¶ÔÏó
+//ajaxåŠŸèƒ½å¯¹è±¡
 var Ajax = {
 	Request	: function(vname, vars){
 		var ajax = new jieqi_ajax();
@@ -443,23 +443,23 @@ var Ajax = {
 	}
 }
 
-//Ò³Ãæ¿í¶È
+//é¡µé¢å®½åº¦
 function pageWidth(){
 	return window.innerWidth != null ? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
 }
-//Ò³Ãæ¸ß¶È
+//é¡µé¢é«˜åº¦
 function pageHeight(){
 	return window.innerHeight != null? window.innerHeight : document.documentElement && document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body != null? document.body.clientHeight : null;
 }
-//Ò³¶¥×ø±ê
+//é¡µé¡¶åæ ‡
 function pageTop(){
 	return typeof window.pageYOffset != 'undefined' ? window.pageYOffset : document.documentElement && document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
 }
-//Ò³×ó×ø±ê
+//é¡µå·¦åæ ‡
 function pageLeft(){
 	return typeof window.pageXOffset != 'undefined' ? window.pageXOffset : document.documentElement && document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ? document.body.scrollLeft : 0;
 }
-//ÏÔÊ¾ÒõÓ°±³¾°
+//æ˜¾ç¤ºé˜´å½±èƒŒæ™¯
 function showMask(){
 	var sWidth,sHeight;
 	sWidth = document.body.scrollWidth;
@@ -472,7 +472,7 @@ function showMask(){
 	mask.style.zIndex = "5000";
 	document.body.appendChild(mask);
 }
-//Òş²ØÒõÓ°±³¾°
+//éšè—é˜´å½±èƒŒæ™¯
 function hideMask(){
 	var mask = document.getElementById("mask");
 	if(mask != null){
@@ -482,7 +482,7 @@ function hideMask(){
 }
 
 var dialogs = new Array();
-//ÏÔÊ¾µ¯³ö¿ò
+//æ˜¾ç¤ºå¼¹å‡ºæ¡†
 function displayDialog(html){
 	var dialog;
 	dialog = document.getElementById("dialog");
@@ -524,7 +524,7 @@ function displayDialog(html){
 	dialog.style.top =  dialog_top + "px";
 	dialog.style.visibility = "visible";
 }
-//¸ù¾İurl´ò¿ªµ¯³ö¿ò
+//æ ¹æ®urlæ‰“å¼€å¼¹å‡ºæ¡†
 function openDialog(url, mask){
 	if(mask) showMask();
 	if(typeof dialogs[url] == 'undefined'){
@@ -538,7 +538,7 @@ function openDialog(url, mask){
 		displayDialog(dialogs[url]);
 	}
 }
-//¹Ø±Õµ¯³ö¿ò
+//å…³é—­å¼¹å‡ºæ¡†
 function closeDialog(){
 	var dialog = document.getElementById("dialog");
 	if(document.body){
@@ -548,7 +548,7 @@ function closeDialog(){
 	}
 	if(arguments.length == 0) hideMask();
 }
-//Í¼Æ¬ËõĞ¡µÄÊÊºÏ´óĞ¡
+//å›¾ç‰‡ç¼©å°çš„é€‚åˆå¤§å°
 function imgResize(obj){
 	var width = arguments.length < 2 ? 600 : arguments[1];
 	if(obj.width > width) {
@@ -557,15 +557,15 @@ function imgResize(obj){
 		obj.style.cursor='pointer';
 	}
 }
-//Í¼Æ¬¹¦ÄÜ²Ëµ¥
+//å›¾ç‰‡åŠŸèƒ½èœå•
 function imgMenu(obj){
 
 }
-//ÏÔÊ¾Í¼Æ¬µ¯³ö¿ò
+//æ˜¾ç¤ºå›¾ç‰‡å¼¹å‡ºæ¡†
 function  imgDialog(url){
 	if(arguments.length < 2 || arguments[1].resized) openDialog(url, true);
 }
-//ÔØÈëjs
+//è½½å…¥js
 function loadJs(url){
 	if(arguments.length >= 2 && typeof arguments[1] == 'function') funload = arguments[1];
 	if(arguments.length >= 3 && typeof arguments[2] == 'function') funerror = arguments[2];
@@ -597,7 +597,7 @@ function loadJs(url){
 		if(typeof funerror == "function") funerror();
 	}
 }
-//ÔØÈëCSS
+//è½½å…¥CSS
 function loadCss(url){
 	var c=document.createElement("link"); 
 	c.rel="stylesheet";
@@ -605,7 +605,7 @@ function loadCss(url){
 	c.href=url;
 	document.getElementsByTagName("head")[0].appendChild(c);
 }
-//»ñµÃÊÂ¼ş
+//è·å¾—äº‹ä»¶
 function getEvent() {
 	if(window.event) return window.event;
 	func = getEvent.caller;
@@ -620,7 +620,7 @@ function getEvent() {
 	}
 	return null;
 }
-//È¡ÏûÊÂ¼ş
+//å–æ¶ˆäº‹ä»¶
 function stopEvent(event) {
 	e = event ? event : window.event;
 	if(!e) e = getEvent();

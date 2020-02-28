@@ -151,7 +151,7 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: justify;
 }
 
-#read-content p {
+#TextContent p {
 	text-indent: 2em;
 	word-wrap: break-word;
 	word-break: break-word;

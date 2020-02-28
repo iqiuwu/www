@@ -10,7 +10,7 @@
 .extra{display:block;margin:0 auto;float:none; width:1024px/*970px*/;}
 #wrap,#wrap-read{ min-width:997px; background-color:#F7F7F7; padding-bottom:20px;}
 #wrap-read{ background-color:#686868;}
-.watermark{color:#999; font-size:12px; font-family:'ËÎÌå';}
+.watermark{color:#999; font-size:12px; font-family:'å®‹ä½“';}
 .cnt:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .cnt{display:inline-block;}
 * html .cnt{height:1%;}
@@ -25,7 +25,7 @@
 .border-bottom-none{border-bottom:none;}
 .border-top-none{border-top:none;}
 
-/*ÎÄ±¾Òç³ö*/
+/*æ–‡æœ¬æº¢å‡º*/
 i.wordnumber{ font-style: normal;}
 .txt_of{width:100%; height:1.3em; overflow:hidden; zoom:1;}
 .txt_of .txt_con{float:left; height:1.3em; margin-right:3em; overflow:hidden;}
@@ -250,7 +250,7 @@ a.more{ display: block; text-align: center; height:34px; line-height: 34px; bord
 .commentlist .txt{ margin: 10px 0 20px 0;}
 .commentlist .icon{ font-size: 18px; vertical-align: middle;}
 
-/*´òÉÍ*/
+/*æ‰“èµ*/
 .reward { padding: 20px 0;}
 .reward div.col{ float: left; width: 19.88888%;}
 .reward p{ margin: 5px 0;}
@@ -296,9 +296,9 @@ a.more{ display: block; text-align: center; height:34px; line-height: 34px; bord
 .readmain{ line-height: 180%;}
 .readmain p{ text-indent: 2em;}
 .readmain .txt{font-size: 18px;line-height: 180%;}
-.readmain .txt.f-mini{ font-size: 12px; font-family: "\5B8B\4F53";/*\5B8B\4F53ËÎÌå*/}
+.readmain .txt.f-mini{ font-size: 12px; font-family: "\5B8B\4F53";/*\5B8B\4F53å®‹ä½“*/}
 .readmain .txt.f-s{ font-size: 14px; font-family: "\5B8B\4F53";/*\5FAE\8F6F\96C5\9ED1*/}
-.readmain .txt.f-sm{ font-size: 15px; font-family: "\5FAE\8F6F\96C5\9ED1";/*Î¢ÈíÑÅºÚ*/}
+.readmain .txt.f-sm{ font-size: 15px; font-family: "\5FAE\8F6F\96C5\9ED1";/*å¾®è½¯é›…é»‘*/}
 .readmain .txt.f-m{ font-size: 18px;}
 .readmain .txt.f-mx{ font-size: 22px;line-height: 200%;}
 
@@ -325,32 +325,32 @@ a.more{ display: block; text-align: center; height:34px; line-height: 34px; bord
 .tabs-side li.thistab h2{border-width: 1px 0 1px 0; border-style: solid; border-color: #E1E9EC transparent #E1E9EC transparent; background: #fff;}
 
 
-/*pop tipsµ¯²ã*/
+/*pop tipså¼¹å±‚*/
 .poptips{border: 1px solid #D0D0D0; border-radius: 2px; background: #FFFFFF;}
 .poptips-arrow{ position: absolute; display:block; width: 0; height: 0; line-height: 0; }
 .poptips-arrow-up{ border-width: 0 8px 12px 8px; border-color: transparent transparent #D0D0D0 transparent; border-style: dashed dashed solid dashed;}
 .poptips-arrow-up.white{ border-color: transparent transparent #fff transparent;}
 .poptips-arrow-up.grey{ border-color: transparent transparent #e0e0e0 transparent;}
 
-/*tabÇĞ»»¼æÈİIE6*/
+/*tabåˆ‡æ¢å…¼å®¹IE6*/
 .boxtab .tabs li{ float: left; margin: 0; padding: 10px 25px; color:#A7B1C3; -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; cursor: pointer;}
 .boxtab .tabs li.thistab{ color: #F16B5A; background: #fff;}
 .boxtab .tabs li .icon{ font-size: 20px; vertical-align: text-bottom;}
 .boxtab.border li.thistab{ margin-bottom: -1px; color: #F16B5A; background: #fff; border: 1px solid #E1E9EC; border-bottom: none;}
 .boxtab.border .tab_conbox{ -webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; border: 1px solid #E1E9EC;}
 
-/*overlayµ¯³ö²ã*/
+/*overlayå¼¹å‡ºå±‚*/
 .overlay {display:none;	background: #F3F3F4; border-radius:5px;}
 .overlay .close{position:absolute;cursor:pointer;right:-15px;top:-15px;height:36px;width:36px; background:url(../images/ico.png) -126px -50px no-repeat;}
 .overlay .lay-t{ height:40px; line-height:40px; border-radius:5px 5px 0 0;padding:0 20px; background: #fff; border-bottom: 1px solid #e0e0e0;}
-.overlay .lay-t h3{ font:16px/40px; /*font:18px/50px 'Î¢ÈíÑÅºÚ';*/color:#4A4A4A; font-weight: normal;}
+.overlay .lay-t h3{ font:16px/40px; /*font:18px/50px 'å¾®è½¯é›…é»‘';*/color:#4A4A4A; font-weight: normal;}
 .overlay .ico-13{ margin:17px 9px 0 0;}
 .overlay th{line-height: 32px; vertical-align: top;padding:10px 0;}
 .overlay td{padding:10px 0; line-height:18px;}
 .overlay .checkbox{ margin:3px 5px 0 0;}
 .overlay .login-other{border:1px solid #ccc;border-radius:3px; background-color:#F7F7F7; padding:19px 20px;}
 .overlay .text,.overlay .textarea{ background-color:#F7F7F7;}
-/*ÌáĞÑ*/
+/*æé†’*/
 .alert{padding:10px; color:#747F8D; border:1px solid transparent; /*border-radius:3px;*/line-height:20px;}
 .alert.alert-sm{padding:20px 10px; }
 .alert-txt.success{ color: #35D9C8;}
@@ -364,7 +364,7 @@ a.more{ display: block; text-align: center; height:34px; line-height: 34px; bord
 .pg404{ position:absolute; left: 50%; top: 50%; width: 240px; height:410px; margin-left:-120px; margin-top: -260px; text-align: center; color: #bcbcbc;}
 .pg404 h2{ width: 220px; padding-top: 200px; margin: 0 auto 20px; font-size: 48px; font-weight: normal; background: url(../images/ico.gif) no-repeat 56px -308px;}
 
-/*·­Ò³*/
+/*ç¿»é¡µ*/
 .pagination .icon{ padding-right: 0;}
 .pagination {
   display: inline-block;
@@ -595,7 +595,7 @@ textarea.form-control.h-25{ height: 250px;}
 .boxphoto{ display: block; height: 298px; margin-top: 20px; text-align: center; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; border: 1px solid #E1E9EC; background: url(../images/bg-author.gif) repeat left top #f1faf8;}
 .userphoto{ display: block; margin: 50px auto 30px; width: 100px; height: 100px; border-radius: 50%;}
 
-/*selectÏÂÀ­±íµ¥-jquery UI*/
+/*selectä¸‹æ‹‰è¡¨å•-jquery UI*/
 div.select-main {
 	background-color: #FFFFFF;
 	border: 1px solid #e0e0e0;
@@ -663,7 +663,7 @@ ul.select-list {
 	cursor: pointer;
 	margin: 15px 0 7px;
 }
-/* Scroll view - selectÏÂÀ­±íµ¥-jquery UI*/
+/* Scroll view - selectä¸‹æ‹‰è¡¨å•-jquery UI*/
 ul.select-list::-webkit-scrollbar { width: 12px;}
 ul.select-list::-webkit-scrollbar-track { border-radius: 10px;}
 ul.select-list::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.5);}
@@ -676,7 +676,7 @@ ul.select-list {
     scrollbar-track-color: #CED1D1;
     scrollbar-arrow-color: #333;
 }
-/* End scroll view -selectÏÂÀ­±íµ¥-jquery UI*/
+/* End scroll view -selectä¸‹æ‹‰è¡¨å•-jquery UI*/
 li.select-items {	color: #333333;	padding: 7px 15px;}
 li.select-items:hover,li.select-items.active {background-color: #F16B5A;	color: #FFFFFF;}
 

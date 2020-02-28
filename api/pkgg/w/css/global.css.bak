@@ -206,7 +206,7 @@ ul,li{list-style-type:none;-webkit-list-style-position:inside;-moz-list-style-po
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /*width: 1054px;/*width: 1024px;*/
+  width: 1054px;/*width: 1024px;*/
 }
 .container-fluid {
   padding-right: 15px;

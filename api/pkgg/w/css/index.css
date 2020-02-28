@@ -2,7 +2,7 @@
  * index.css
  **/
 
-/*图片轮播*/
+/*鍥剧墖杞挱*/
 .banner { position: relative; visibility: hidden; overflow: hidden; width:100%; height: 350px; background: #f2f2f2;}
 .banner_wrap {overflow: hidden; position: relative; width:100%; height: 350px;}
 .banner_wrap > div {float: left; position: relative; width:100%;}
@@ -12,7 +12,7 @@
 #banner_pos { width:100%; padding-bottom:2%; text-align: center;}
 #banner_pos li { background-color:rgba(255,255,255,.7); border-radius:12px; cursor: pointer; display: inline-block; height:12px; margin: 0 5px; width:12px;}
 #banner_pos li.crt { background-color:rgba(255,255,255,1);}
-/*活动公告*/
+/*娲诲姩鍏憡*/
 .announcement { z-index: 3; position:absolute; right: 25px; top: 10px; width:220px; height:330px; padding: 10px 15px;
 	background-color: #fff; /* background color for IE */
 	filter: alpha(opacity=90); /* opacity filter for IE */
@@ -26,7 +26,7 @@
 .announcement .welfare{ display: block; margin: 30px auto 0; width: 80px; padding-top: 60px; text-align: center; font-size: 16px; color:#F9A131; background: url(../images/ico.gif) no-repeat 15px 0;}
 
 
-/*畅销书籍*/
+/*鐣呴攢涔︾睄*/
 .hotbook .box-content{ padding: 34px 20px 0;}
 .hotbook .list-pictxt{ padding-left: 20px;}
 .hotbook .pic-large{ position: relative; float: left;width: 330px; height:420px; text-align: center; overflow: hidden; }

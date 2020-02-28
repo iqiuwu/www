@@ -35,13 +35,13 @@ if(document.cookie.indexOf('jieqiUserInfo') >= 0){
 if(jieqiUserId != 0 && jieqiUserName != '' && (document.cookie.indexOf('PHPSESSID') != -1 || jieqiUserPassword != '')){
   document.write('<table width="100%"  border="0" cellspacing="0" cellpadding="0">');
   document.write('<tr>');
-  document.write('<td align="left" valign="middle" height="20">&nbsp;»¶Ó­Äú£¡ '+jieqiUserName+'&nbsp;&nbsp;&nbsp;<a href="/userdetail.php" target="_top">²é¿´×ÊÁÏ</a> | <a href="/modules/article/bookcase.php" target="_top">ÎÒµÄÊé¼Ü</a>');
+  document.write('<td align="left" valign="middle" height="20">&nbsp;æ¬¢è¿æ‚¨ï¼ '+jieqiUserName+'&nbsp;&nbsp;&nbsp;<a href="/userdetail.php" target="_top">æŸ¥çœ‹èµ„æ–™</a> | <a href="/modules/article/bookcase.php" target="_top">æˆ‘çš„ä¹¦æ¶</a>');
   if(jieqiNewMessage > 0){
-	  document.write(' | <a href="/message.php?box=inbox" target="_top" class="mue1">ÄúÓĞ¶ÌĞÅ</a>');
+	  document.write(' | <a href="/message.php?box=inbox" target="_top" class="mue1">æ‚¨æœ‰çŸ­ä¿¡</a>');
   }else{
-	  document.write(' | <a href="/message.php?box=inbox" target="_top">²é¿´¶ÌĞÅ</a>');
+	  document.write(' | <a href="/message.php?box=inbox" target="_top">æŸ¥çœ‹çŸ­ä¿¡</a>');
   }
-  document.write(' | <a href="/logout.php" target="_self">ÍË³öµÇÂ½</a>&nbsp;</td>');
+  document.write(' | <a href="/logout.php" target="_self">é€€å‡ºç™»é™†</a>&nbsp;</td>');
   document.write('</tr>');
   document.write('</table>');
 }else{
@@ -52,15 +52,15 @@ if(jieqiUserId != 0 && jieqiUserName != '' && (document.cookie.indexOf('PHPSESSI
   document.write('<table width="100%"  border="0" cellspacing="0" cellpadding="0">');
   document.write('<form name="framelogin" method="post" action="/login.php">');
   document.write('<tr>');
-  document.write('<td align="left" valign="middle">ÓÃ»§Ãû£º');
+  document.write('<td align="left" valign="middle">ç”¨æˆ·åï¼š');
   document.write('<input name="username" type="text" class="text" onkeypress="javascript: if (event.keyCode==32) return false;" value="" size="8" maxlength="30" />');
-  document.write('&nbsp;ÃÜÂë£º<input type="password" class="text" size="8" maxlength="30" name="password" />');
+  document.write('&nbsp;å¯†ç ï¼š<input type="password" class="text" size="8" maxlength="30" name="password" />');
   document.write('<input type="hidden" name="action" value="login" />');
   document.write('<input type="hidden" name="jumpurl" value="'+jumpurl+'" />');
   document.write(' <input type="checkbox" class="checkbox" name="usecookie" value="1" />');
-  document.write('¼ÇÂ¼cookie&nbsp;');
-  document.write('<input type="submit" class="button" value="µÇÂ¼" name="submit" />');
-  document.write('&nbsp;<a href="/register.php" target="_top">ÓÃ»§×¢²á</a> &nbsp;<a href="/getpass.php" target="_top">È¡»ØÃÜÂë</a>&nbsp;</td>');
+  document.write('è®°å½•cookie&nbsp;');
+  document.write('<input type="submit" class="button" value="ç™»å½•" name="submit" />');
+  document.write('&nbsp;<a href="/register.php" target="_top">ç”¨æˆ·æ³¨å†Œ</a> &nbsp;<a href="/getpass.php" target="_top">å–å›å¯†ç </a>&nbsp;</td>');
   document.write('</tr>');
   document.write('</form>');
   document.write('</table>');
@@ -68,16 +68,16 @@ if(jieqiUserId != 0 && jieqiUserName != '' && (document.cookie.indexOf('PHPSESSI
 
 function get_cookie_value(Name) { 
   var search = Name + "=";
-¡¡var returnvalue = ""; 
-¡¡if (document.cookie.length > 0) { 
-¡¡  offset = document.cookie.indexOf(search) 
-¡¡¡¡if (offset != -1) { 
-¡¡¡¡  offset += search.length 
-¡¡¡¡  end = document.cookie.indexOf(";", offset); 
-¡¡¡¡  if (end == -1) 
-¡¡¡¡  end = document.cookie.length; 
-¡¡¡¡  returnvalue=unescape(document.cookie.substring(offset, end));
-¡¡¡¡} 
-¡¡} 
-¡¡return returnvalue; 
+ã€€var returnvalue = ""; 
+ã€€if (document.cookie.length > 0) { 
+ã€€  offset = document.cookie.indexOf(search) 
+ã€€ã€€if (offset != -1) { 
+ã€€ã€€  offset += search.length 
+ã€€ã€€  end = document.cookie.indexOf(";", offset); 
+ã€€ã€€  if (end == -1) 
+ã€€ã€€  end = document.cookie.length; 
+ã€€ã€€  returnvalue=unescape(document.cookie.substring(offset, end));
+ã€€ã€€} 
+ã€€} 
+ã€€return returnvalue; 
 }

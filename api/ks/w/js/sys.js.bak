@@ -35,7 +35,7 @@ function __x_tj(){//Í³¼Æ´úÂë
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?cdd3e4ab3f1ccf3bfea819fad20d4909";
+  hm.src = "https://hm.baidu.com/hm.js?f1b30417e65c4a5b0749dafafe49897c";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();

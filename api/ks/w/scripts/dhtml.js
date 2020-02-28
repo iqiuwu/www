@@ -1,4 +1,4 @@
-//¸ù¾İidÑ°ÕÒÎï¼ş
+//æ ¹æ®idå¯»æ‰¾ç‰©ä»¶
 function jieqiGetElementById(id){
 	if (document.getElementById) {
 		return (document.getElementById(id));
@@ -11,7 +11,7 @@ function jieqiGetElementById(id){
 	}
 }
 
-//¼ÇÂ¼²åÈëÎ»ÖÃ
+//è®°å½•æ’å…¥ä½ç½®
 function jieqiSavePosition(id)
 {
 	var textareaDom = jieqiGetElementById(id);
@@ -20,7 +20,7 @@ function jieqiSavePosition(id)
 	}
 }
 
-//²åÈëÎÄ±¾
+//æ’å…¥æ–‡æœ¬
 function jieqiInsertText(obj, text)
 {
 	if (obj.createTextRange && obj.caretPos){
@@ -36,14 +36,14 @@ function jieqiInsertText(obj, text)
   	}
 }
 
-//²åÈë±íÇé
+//æ’å…¥è¡¨æƒ…
 function jieqiCodeSmile(id, code){
 	var obj=jieqiGetElementById(id);
 	jieqiInsertText(obj, code)
 	obj.focus();
 }
 
-//ÎÄ×Ö´úÂë£¬×ÖÌå¼Ó´Ö¡¢±äĞ±µÈ
+//æ–‡å­—ä»£ç ï¼Œå­—ä½“åŠ ç²—ã€å˜æ–œç­‰
 function jieqiCodeText(id,code){
 	if (document.selection && document.selection.type == "Text") {
 		var range = document.selection.createRange();
@@ -55,7 +55,7 @@ function jieqiCodeText(id,code){
     }
 }
 
-//²åÈëÎÄ×ÖÑùÊ½£¬´óĞ¡¡¢ÑÕÉ«¡¢×ÖÌå
+//æ’å…¥æ–‡å­—æ ·å¼ï¼Œå¤§å°ã€é¢œè‰²ã€å­—ä½“
 function jieqiCodeStyle(id,code,val) {
     if (document.selection && document.selection.type == "Text") {
 		var range = document.selection.createRange();
@@ -67,11 +67,11 @@ function jieqiCodeStyle(id,code,val) {
     }
 }
 
-//ÌáÊ¾²åÈë³¬Á´
+//æç¤ºæ’å…¥è¶…é“¾
 function jieqiCodeUrl(id){
 	var obj = jieqiGetElementById(id);
-	var text = prompt("ÇëÊäÈëÁ´½ÓÏÔÊ¾µÄÎÄ×Ö(Èç¹ûÎª¿ÕÔòÖ±½ÓÏÔÊ¾Á´½ÓµØÖ·)", "");
-	var text2 = prompt("ÇëÊäÈëÁ´½ÓµÄ URL", "http://");
+	var text = prompt("è¯·è¾“å…¥é“¾æ¥æ˜¾ç¤ºçš„æ–‡å­—(å¦‚æœä¸ºç©ºåˆ™ç›´æ¥æ˜¾ç¤ºé“¾æ¥åœ°å€)", "");
+	var text2 = prompt("è¯·è¾“å…¥é“¾æ¥çš„ URL", "http://");
 	if ( text2 != null && text2 != "" ) {
         if ( text == null || text == "" ) {
 			var result = "[url=" + text2 + "]" + text2 + "[/url]";
@@ -83,14 +83,14 @@ function jieqiCodeUrl(id){
 	obj.focus();
 }
 
-//ÌáÊ¾²åÈëÍ¼Æ¬
+//æç¤ºæ’å…¥å›¾ç‰‡
 function jieqiCodeImg(id){
-	var text = prompt("ÇëÊäÈëÍ¼Æ¬µÄ URL", "http://");
+	var text = prompt("è¯·è¾“å…¥å›¾ç‰‡çš„ URL", "http://");
 	var obj = jieqiGetElementById(id);
 	if ( text != null && text != "" ) {
-		var text2 = prompt("ÇëÊäÈëÍ¼Æ¬¶ÔÆë·½Ê½\n¡°l¡±±íÊ¾¿¿×ó£¬¡°r¡±±íÊ¾¿¿ÓÒ£¬Áô¿Õ±íÊ¾Ä¬ÈÏ", "");
+		var text2 = prompt("è¯·è¾“å…¥å›¾ç‰‡å¯¹é½æ–¹å¼\nâ€œlâ€è¡¨ç¤ºé å·¦ï¼Œâ€œrâ€è¡¨ç¤ºé å³ï¼Œç•™ç©ºè¡¨ç¤ºé»˜è®¤", "");
 		while ( ( text2 != "" ) && ( text2 != "r" ) && ( text2 != "R" ) && ( text2 != "l" ) && ( text2 != "L" ) && ( text2 != null ) ) {
-			text2 = prompt("ÇëÊäÈëÍ¼Æ¬¶ÔÆë·½Ê½\n¡°l¡±±íÊ¾¿¿×ó£¬¡°r¡±±íÊ¾¿¿ÓÒ£¬Áô¿Õ±íÊ¾Ä¬ÈÏ", "");
+			text2 = prompt("è¯·è¾“å…¥å›¾ç‰‡å¯¹é½æ–¹å¼\nâ€œlâ€è¡¨ç¤ºé å·¦ï¼Œâ€œrâ€è¡¨ç¤ºé å³ï¼Œç•™ç©ºè¡¨ç¤ºé»˜è®¤", "");
 		}
 		if ( text2 == "l" || text2 == "L" ) {
 			text2 = " align=left";
@@ -104,9 +104,9 @@ function jieqiCodeImg(id){
 	}
 	obj.focus();
 }
-//ÌáÊ¾²åÈëEmail
+//æç¤ºæ’å…¥Email
 function jieqiCodeEmail(id){
-	var text = prompt("ÇëÊäÈëEmailµØÖ·", "");
+	var text = prompt("è¯·è¾“å…¥Emailåœ°å€", "");
 	var obj = jieqiGetElementById(id);
 	if ( text != null && text != "" ) {
 		var result = "[email]" + text + "[/email]";
@@ -114,9 +114,9 @@ function jieqiCodeEmail(id){
 	}
 	obj.focus();
 }
-//ÌáÊ¾²åÈëÒıÎÄ
+//æç¤ºæ’å…¥å¼•æ–‡
 function jieqiCodeQuote(id){
-	var text = prompt("ÇëÊäÈëÒıÎÄÄÚÈİ", "");
+	var text = prompt("è¯·è¾“å…¥å¼•æ–‡å†…å®¹", "");
 	var obj = jieqiGetElementById(id);
 	if ( text != null && text != "" ) {
 		var pos = text.indexOf(unescape('%00'));
@@ -128,9 +128,9 @@ function jieqiCodeQuote(id){
 	}
 	obj.focus();
 }
-//ÌáÊ¾²åÈë´úÂë
+//æç¤ºæ’å…¥ä»£ç 
 function jieqiCodeCode(id){
-	var text = prompt("ÇëÊäÈë´úÂëÄÚÈİ", "");
+	var text = prompt("è¯·è¾“å…¥ä»£ç å†…å®¹", "");
 	var obj = jieqiGetElementById(id);
 	if ( text != null && text != "" ) {
 		var result = "[code]" + text + "[/code]";
@@ -139,7 +139,7 @@ function jieqiCodeCode(id){
 	obj.focus();
 }
 
-//Ìá½»´°¿Ú
+//æäº¤çª—å£
 function jieqiPostForm(event)
 {
 	if((event.ctrlKey && event.keyCode == 13)||(event.altKey && event.keyCode == 83))

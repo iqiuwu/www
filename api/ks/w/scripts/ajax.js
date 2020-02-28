@@ -1,4 +1,4 @@
-//È¡µÃÒ»¸ö¶ÔÏó£¬Ïàµ±ÓÚgetElementById()
+//å–å¾—ä¸€ä¸ªå¯¹è±¡ï¼Œç›¸å½“äºgetElementById()
 function $() {
   var elements = new Array();
   for (var i = 0; i < arguments.length; i++) {
@@ -12,7 +12,7 @@ function $() {
   return elements;
 }
 
-//°ÑËü½ÓÊÕµ½µÄµ¥¸öµÄ²ÎÊı×ª»»³ÉÒ»¸öArray¶ÔÏó¡£
+//æŠŠå®ƒæ¥æ”¶åˆ°çš„å•ä¸ªçš„å‚æ•°è½¬æ¢æˆä¸€ä¸ªArrayå¯¹è±¡ã€‚
 var $A = Array.from = function(iterable) {
   if (!iterable) return [];
   if (iterable.toArray) {
@@ -25,9 +25,9 @@ var $A = Array.from = function(iterable) {
   }
 }
 
-//formÏà¹Øº¯Êı
+//formç›¸å…³å‡½æ•°
 var Form = {
-	//°Ñ±í¸ñÄÚÈİ×ª»¯³Éstring
+	//æŠŠè¡¨æ ¼å†…å®¹è½¬åŒ–æˆstring
   serialize: function(form) {
     var elements = Form.getElements($(form));
     var queryComponents = new Array();
@@ -37,7 +37,7 @@ var Form = {
     }
     return queryComponents.join('&');
   },
-  //È¡µÃ±í¸ñÄÚÈİÎªÊı×éĞÎÊ½
+  //å–å¾—è¡¨æ ¼å†…å®¹ä¸ºæ•°ç»„å½¢å¼
   getElements: function(form) {
     form = $(form);
     var elements = new Array();
@@ -49,7 +49,7 @@ var Form = {
     }
     return elements;
   },
-  //disable±í¸ñËùÓĞÄÚÈİ
+  //disableè¡¨æ ¼æ‰€æœ‰å†…å®¹
   disable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -58,7 +58,7 @@ var Form = {
       element.disabled = 'true';
     }
   },
-  //enable±í¸ñËùÓĞÄÚÈİ
+  //enableè¡¨æ ¼æ‰€æœ‰å†…å®¹
   enable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -66,24 +66,24 @@ var Form = {
       element.disabled = '';
     }
   },
-  //ÕÒµ½formÀïÃæµÚÒ»¸öÔªËØ
+  //æ‰¾åˆ°formé‡Œé¢ç¬¬ä¸€ä¸ªå…ƒç´ 
   findFirstElement: function(form) {
     return Form.getElements(form).find(function(element) {
       return element.type != 'hidden' && !element.disabled &&
         ['input', 'select', 'textarea'].include(element.tagName.toLowerCase());
     });
   },
-  //°Ñ½¹µã¼¯ÖĞÔÚ±í¸ñµÚÒ»¸öÔªËØÉÏ
+  //æŠŠç„¦ç‚¹é›†ä¸­åœ¨è¡¨æ ¼ç¬¬ä¸€ä¸ªå…ƒç´ ä¸Š
   focusFirstElement: function(form) {
     Field.activate(Form.findFirstElement(form));
   },
-  //Reset±í¸ñ
+  //Resetè¡¨æ ¼
   reset: function(form) {
     $(form).reset();
   }
 }
 
-//formÀïÃæÔªËØ¶¨Òå
+//formé‡Œé¢å…ƒç´ å®šä¹‰
 Form.Element = {
   serialize: function(element) {
     element = $(element);
@@ -165,16 +165,16 @@ Form.Element.Serializers = {
   }
 }
 
-//È¡formÀïÃæÎï¼şµÄÖµ£¬µÈÍ¬ÓÚForm.Element.getValue()
+//å–formé‡Œé¢ç‰©ä»¶çš„å€¼ï¼Œç­‰åŒäºForm.Element.getValue()
 var $F = Form.Element.getValue;
 
 //*******************************************************
-// ajaxÀà
+// ajaxç±»
 //*******************************************************
 
 function jieqi_ajax(url) {
 	this.handler = null;
-	//³õÊ¼»¯
+	//åˆå§‹åŒ–
 	this.init = function() {
 		this.method = "POST";
   		this.queryStringSeparator = "?";
@@ -214,12 +214,12 @@ function jieqi_ajax(url) {
 		}
   	};
 
-	//ÉèÖÃ±äÁ¿
+	//è®¾ç½®å˜é‡
 	this.setVar = function(name, value){
 		this.vars[name] = Array(value, false);
 	};
 
-	//±äÁ¿±àÂë
+	//å˜é‡ç¼–ç 
 	this.encVar = function(name, value, returnvars) {
 		if (true == returnvars) {
 			return Array(encodeURIComponent(name), encodeURIComponent(value));
@@ -228,7 +228,7 @@ function jieqi_ajax(url) {
 		}
 	}
 
-	//²ğ·Ö²éÑ¯×Ö·û´®
+	//æ‹†åˆ†æŸ¥è¯¢å­—ç¬¦ä¸²
 	this.processURLString = function(string, encode) {
 		encoded = encodeURIComponent(this.argumentSeparator);
 		regexp = new RegExp(this.argumentSeparator + "|" + encoded);
@@ -243,7 +243,7 @@ function jieqi_ajax(url) {
 		}
 	}
 	
-	//½¨Á¢±àÂëºóµÄ²éÑ¯×Ö·û´®
+	//å»ºç«‹ç¼–ç åçš„æŸ¥è¯¢å­—ç¬¦ä¸²
 	this.createURLString = function(urlstring) {
 		if (urlstring) {
 			if (this.URLString.length) {
@@ -272,12 +272,12 @@ function jieqi_ajax(url) {
 		}
 	}
 
-	//ÔËĞĞ½á¹û
+	//è¿è¡Œç»“æœ
 	this.runResponse = function() {
 		eval(this.response);
 	}
 	
-	//Ìá½»ĞÅÏ¢
+	//æäº¤ä¿¡æ¯
 	this.runAJAX = function(urlstring) {
 		if (this.failed) {
 			this.onFail();
@@ -337,7 +337,7 @@ function jieqi_ajax(url) {
 		}
 	}
 
-	//Ìá½»form
+	//æäº¤form
 	this.submitForm = function(form) {
 		if(this.requestFile == null) this.requestFile = $(form).action;
 		//this.URLString = Form.serialize(form);

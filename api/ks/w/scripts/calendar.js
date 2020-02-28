@@ -30,7 +30,7 @@ function WeekDay(date){
 function calender(){
 	var lis = "";
 	var style = "";
-	/*¿ÉÒÔ°ÑÏÂÃæµÄcss¼ôÇĞ³öÈ¥¶ÀÁ¢Ò»¸öcssÎÄ¼ş*/
+	/*å¯ä»¥æŠŠä¸‹é¢çš„csså‰ªåˆ‡å‡ºå»ç‹¬ç«‹ä¸€ä¸ªcssæ–‡ä»¶*/
 	style +="<style type='text/css'>";
 	style +=".calender { width:170px; height:auto; font-size:12px; margin-right:14px; background:#fff; border:1px solid #397EAE; padding:1px; display:none; position:absolute; z-index:9;}";
 	style +=".calender ul {list-style-type:none; margin:0; padding:0;}";
@@ -95,13 +95,13 @@ function calender(){
 
 	var CalenderTitle = "<a href='javascript:void(0)' class='NextMonth' onclick=calender(DateAdd('m',1,'"+now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()+"'),this) title='Next Month'>&raquo;</a>";
 	CalenderTitle += "<a href='javascript:void(0)' class='LastMonth' onclick=calender(DateAdd('m',-1,'"+now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()+"'),this) title='Previous Month'>&laquo;</a>";
-	CalenderTitle += "<span class='selectThisYear'><a href='javascript:void(0)' onclick='CalenderselectYear(this)' title='Click here to select other year' >"+now.getFullYear()+"</a></span>Äê<span class='selectThisMonth'><a href='javascript:void(0)' onclick='CalenderselectMonth(this)' title='Click here to select other month'>"+(parseInt(now.getMonth())+1).toString()+"</a></span>ÔÂ"; 
+	CalenderTitle += "<span class='selectThisYear'><a href='javascript:void(0)' onclick='CalenderselectYear(this)' title='Click here to select other year' >"+now.getFullYear()+"</a></span>å¹´<span class='selectThisMonth'><a href='javascript:void(0)' onclick='CalenderselectMonth(this)' title='Click here to select other month'>"+(parseInt(now.getMonth())+1).toString()+"</a></span>æœˆ"; 
 
 	if (arguments.length>1){
 		arguments[1].parentNode.parentNode.getElementsByTagName("ul")[1].innerHTML = lis;
 		arguments[1].parentNode.innerHTML = CalenderTitle;
 	}else{
-		var CalenderBox = style+"<div id='calendar' class='calender' onclick='cancelEvent(event)'><div class='calenderTitle'>"+CalenderTitle+"</div><div class='calenderBody'><ul class='day'><li>ÈÕ</li><li>Ò»</li><li>¶ş</li><li>Èı</li><li>ËÄ</li><li>Îå</li><li>Áù</li></ul><ul class='date' id='thisMonthDate'>"+lis+"</ul></div><div class='calenderBottom'><a href='javascript:void(0)' class='closeCalender' onclick='hideCalendar()'>&times;</a><span><span><a href=javascript:void(0) onclick='selectThisDay(this)' title='"+todayString+"'>½ñÌì</a></span></span></div></div>";
+		var CalenderBox = style+"<div id='calendar' class='calender' onclick='cancelEvent(event)'><div class='calenderTitle'>"+CalenderTitle+"</div><div class='calenderBody'><ul class='day'><li>æ—¥</li><li>ä¸€</li><li>äºŒ</li><li>ä¸‰</li><li>å››</li><li>äº”</li><li>å…­</li></ul><ul class='date' id='thisMonthDate'>"+lis+"</ul></div><div class='calenderBottom'><a href='javascript:void(0)' class='closeCalender' onclick='hideCalendar()'>&times;</a><span><span><a href=javascript:void(0) onclick='selectThisDay(this)' title='"+todayString+"'>ä»Šå¤©</a></span></span></div></div>";
 		return CalenderBox;
 	}
 }

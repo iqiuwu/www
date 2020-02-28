@@ -191,7 +191,7 @@ a.more{ display: block; text-align: center; height:34px; line-height: 34px; bord
 .headerbar a.p-0{ padding-right: 0; padding-left:0;}
 .header h1.logo-m a{ display: block; width: 350px; height: 110px; margin: 50px auto;text-indent:-10000px; background: url(../images/logo.png) no-repeat 0 -132px;}
 .header h1.logo{float: left; margin:0;}
-.header h1.logo a{ display:block;width:230px; height:100px;text-indent:-10000px; background:url(../images/logo.png) left 14px no-repeat;}
+.header h1.logo a{ display:block;width:250px; height:100px;text-indent:-10000px; background:url(../images/logo.png) left 14px no-repeat;}
 .header .box-search{ float: right; padding-top: 30px;}
 .box-search .formsearch {float: left; min-width: 344px; padding: 0; border: 1px solid #F16B5A; background: #fff;}
 .formsearch input.txt{ width:300px; height: 38px; line-height: 38px; border: 0; padding: 0 8px; vertical-align: middle;}

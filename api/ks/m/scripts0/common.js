@@ -1,8 +1,8 @@
 function user(){
     if(getCookie('_17mb_username') !=""){
-        document.write('<p class="p1"><i></i><a href="/mybook.php" rel="nofollow">Êé¼Ü</a></p><p class="p2"><i></i><a href="/user.php" rel="nofollow">ÎÒµÄ</a></p>')
+        document.write('<p class="p1"><i></i><a href="/mybook.php" rel="nofollow">ä¹¦æ¶</a></p><p class="p2"><i></i><a href="/user.php" rel="nofollow">æˆ‘çš„</a></p>')
     }else{
-        document.write('<p class="p1"><i></i><a href="/mybook.php" rel="nofollow">Êé¼Ü</a></p><p class="p2"><i></i><a href="/login.php" rel="nofollow">µÇÂ¼</a></p>')
+        document.write('<p class="p1"><i></i><a href="/mybook.php" rel="nofollow">ä¹¦æ¶</a></p><p class="p2"><i></i><a href="/login.php" rel="nofollow">ç™»å½•</a></p>')
     }
 }
 function getCookie(c_name)
@@ -20,11 +20,11 @@ function getCookie(c_name)
     return ""
 }
 var checkbg = "#577a13";
-//ÄÚÈİÒ³ÓÃ»§ÉèÖÃ
+//å†…å®¹é¡µç”¨æˆ·è®¾ç½®
 function nr_setbg(intype){
     var light = document.getElementById("lightdiv");
     if(intype == "light"){
-        if(light.innerHTML == "¹ØµÆ"){
+        if(light.innerHTML == "å…³ç¯"){
             set("light","yes");
             document.cookie="light=yes;path=/";
         }
@@ -47,7 +47,7 @@ function nr_setbg(intype){
     }
 }
 
-//ÄÚÈİÒ³¶ÁÈ¡ÉèÖÃ
+//å†…å®¹é¡µè¯»å–è®¾ç½®
 function getset(){
     var strCookie=document.cookie;
     var arrCookie=strCookie.split("; ");
@@ -94,37 +94,37 @@ function getset(){
     }
 }
 
-//ÄÚÈİÒ³Ó¦ÓÃÉèÖÃ
+//å†…å®¹é¡µåº”ç”¨è®¾ç½®
 function set(intype,p){
-    var nr_body = document.getElementById("novelbody");//Ò³Ãæbody
-    var lightdiv = document.getElementById("lightdiv");//µÆ¹âdiv
-    var fontfont = document.getElementById("fontfont");//×ÖÌådiv
-    var fontbig = document.getElementById("fontbig");//´ó×ÖÌådiv
-    var fontmiddle = document.getElementById("fontmiddle");//ÖĞ×ÖÌådiv
-    var fontsmall = document.getElementById("fontsmall");//Ğ¡×ÖÌådiv
-    var nr1 =  document.getElementById("novelcontent");//ÄÚÈİdiv
-    //µÆ¹â
+    var nr_body = document.getElementById("novelbody");//é¡µé¢body
+    var lightdiv = document.getElementById("lightdiv");//ç¯å…‰div
+    var fontfont = document.getElementById("fontfont");//å­—ä½“div
+    var fontbig = document.getElementById("fontbig");//å¤§å­—ä½“div
+    var fontmiddle = document.getElementById("fontmiddle");//ä¸­å­—ä½“div
+    var fontsmall = document.getElementById("fontsmall");//å°å­—ä½“div
+    var nr1 =  document.getElementById("novelcontent");//å†…å®¹div
+    //ç¯å…‰
     if(intype == "light"){
         if(p == "yes"){
-            //¹ØµÆ
-            lightdiv.innerHTML = "¿ªµÆ";
+            //å…³ç¯
+            lightdiv.innerHTML = "å¼€ç¯";
             nr_body.style.backgroundColor = "#32373B";
             nr1.style.color = "#999";
         }
         else if(p == "no"){
-            //¿ªµÆ
-            lightdiv.innerHTML = "¹ØµÆ";
+            //å¼€ç¯
+            lightdiv.innerHTML = "å…³ç¯";
             nr_body.style.backgroundColor = "#DCECD2";
             nr1.style.color = "#666";
         }
         else if(p == "huyan"){
-            //»¤ÑÛ
-            lightdiv.innerHTML = "¹ØµÆ";
+            //æŠ¤çœ¼
+            lightdiv.innerHTML = "å…³ç¯";
             nr_body.style.backgroundColor = "#DCECD2";
             nr1.style.color = "#000";
         }
     }
-    //×ÖÌå
+    //å­—ä½“
     if(intype == "font"){
         //alert(p);
         fontbig.style.backgroundColor = "";
@@ -145,16 +145,16 @@ function set(intype,p){
     }
 }
 function _17mb_top(){
-    document.write("<!--¶¥²¿¹ã¸æ-->");
+    document.write("<!--é¡¶éƒ¨å¹¿å‘Š-->");
 }
 function _17mb_bottom(){
-    document.write("<!--µ×²¿¹ã¸æ-->");
+    document.write("<!--åº•éƒ¨å¹¿å‘Š-->");
 }
 function _17mb_all(){
-    document.write("<!--Ğü¸¡¹ã¸æ»òÕßÆäËû¹ã¸æ-->");
+    document.write("<!--æ‚¬æµ®å¹¿å‘Šæˆ–è€…å…¶ä»–å¹¿å‘Š-->");
 }
 function _17mb_tongji(){
-    document.write("<!--Í³¼Æ-ÆÕÍ¨µÄÍ¬²½´úÂë-->");
+    document.write("<!--ç»Ÿè®¡-æ™®é€šçš„åŒæ­¥ä»£ç -->");
 }
 
-//Òì²½µÄÍ³¼Æ´úÂëÖ±½Ó·ÅÔÚ´Ë´¦,µ«ĞèÒª°Ñ¿ªÍ·µÄ<script>ºÍ½áÎ²µÄ</script>È¥µô
+//å¼‚æ­¥çš„ç»Ÿè®¡ä»£ç ç›´æ¥æ”¾åœ¨æ­¤å¤„,ä½†éœ€è¦æŠŠå¼€å¤´çš„<script>å’Œç»“å°¾çš„</script>å»æ‰

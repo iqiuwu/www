@@ -1,4 +1,4 @@
-//È¡µÃÒ»¸ö¶ÔÏó£¬Ïàµ±ÓÚgetElementById()
+//å–å¾—ä¸€ä¸ªå¯¹è±¡ï¼Œç›¸å½“äºgetElementById()
 function $() {
   var elements = new Array();
   for (var i = 0; i < arguments.length; i++) {
@@ -11,14 +11,14 @@ function $() {
   return elements;
 }
 
-//°ÑËü½ÓÊÕµ½µÄµ¥¸öµÄ²ÎÊı×ª»»³ÉÒ»¸öArray¶ÔÏó¡£
+//æŠŠå®ƒæ¥æ”¶åˆ°çš„å•ä¸ªçš„å‚æ•°è½¬æ¢æˆä¸€ä¸ªArrayå¯¹è±¡ã€‚
 function $A(list){
 	var arr = [];
 	for (var i=0,len=list.length; i<len; i++){arr[i] = list[i];}
 	return arr;
 }
 
-//³£ÓÃº¯ÊıÀ©Õ¹
+//å¸¸ç”¨å‡½æ•°æ‰©å±•
 var Method = {
 	Element	: function(){
 		this.hide = function(){this.style.display="none"; return this;};
@@ -50,7 +50,7 @@ var Method = {
 Method.Array.apply(Array.prototype);
 Method.String.apply(String.prototype);
 
-//cookie´¦Àí
+//cookieå¤„ç†
 var Cookie = {
     get : function(n){
 	    var dc = "; "+document.cookie+"; ";
@@ -79,9 +79,9 @@ var Cookie = {
     }
 }
 
-//formÏà¹Øº¯Êı
+//formç›¸å…³å‡½æ•°
 var Form = {
-	//°Ñ±í¸ñÄÚÈİ×ª»¯³Éstring
+	//æŠŠè¡¨æ ¼å†…å®¹è½¬åŒ–æˆstring
   serialize: function(form) {
     var elements = Form.getElements($(form));
     var queryComponents = new Array();
@@ -91,7 +91,7 @@ var Form = {
     }
     return queryComponents.join('&');
   },
-  //È¡µÃ±íµ¥ÄÚÈİÎªÊı×éĞÎÊ½
+  //å–å¾—è¡¨å•å†…å®¹ä¸ºæ•°ç»„å½¢å¼
   getElements: function(form) {
     form = $(form);
     var elements = new Array();
@@ -102,7 +102,7 @@ var Form = {
     }
     return elements;
   },
-  //disable±íµ¥ËùÓĞÄÚÈİ
+  //disableè¡¨å•æ‰€æœ‰å†…å®¹
   disable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -111,7 +111,7 @@ var Form = {
       element.disabled = 'true';
     }
   },
-  //enable±íµ¥ËùÓĞÄÚÈİ
+  //enableè¡¨å•æ‰€æœ‰å†…å®¹
   enable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -119,13 +119,13 @@ var Form = {
       element.disabled = '';
     }
   },
-  //Reset±íµ¥
+  //Resetè¡¨å•
   reset: function(form) {
     $(form).reset();
   }
 }
 
-//formÀïÃæÔªËØ¶¨Òå
+//formé‡Œé¢å…ƒç´ å®šä¹‰
 Form.Element = {
   serialize: function(element) {
     element = $(element);
@@ -203,10 +203,10 @@ Form.Element.Serializers = {
   }
 }
 
-//È¡formÀïÃæÎï¼şµÄÖµ£¬µÈÍ¬ÓÚForm.Element.getValue()
+//å–formé‡Œé¢ç‰©ä»¶çš„å€¼ï¼Œç­‰åŒäºForm.Element.getValue()
 var $F = Form.Element.getValue;
 
-//ajax´¦Àí
+//ajaxå¤„ç†
 function jieqi_ajax() {
 	this.init = function() {
 		this.handler = null;
@@ -443,7 +443,7 @@ var Ajax = {
 	}
 }
 
-//³£ÓÃ¹¦ÄÜº¯Êı
+//å¸¸ç”¨åŠŸèƒ½å‡½æ•°
 function pageWidth(){
 	return window.innerWidth != null ? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
 }

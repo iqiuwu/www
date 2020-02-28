@@ -4,95 +4,95 @@
  * Drag.init( header_element, element );
  */
 var Drag = {
-	// ¶ÔÕâ¸öelementµÄÒıÓÃ£¬Ò»´ÎÖ»ÄÜÍÏ×§Ò»¸öElement
+	// å¯¹è¿™ä¸ªelementçš„å¼•ç”¨ï¼Œä¸€æ¬¡åªèƒ½æ‹–æ‹½ä¸€ä¸ªElement
 	obj: null , 
 	/**
 	 * @param: elementHeader	used to drag..
 	 * @param: element			used to follow..
 	 */
 	init: function(elementHeader, element) {
-		// ½« start °ó¶¨µ½ onmousedown ÊÂ¼ş£¬°´ÏÂÊó±ê´¥·¢ start
+		// å°† start ç»‘å®šåˆ° onmousedown äº‹ä»¶ï¼ŒæŒ‰ä¸‹é¼ æ ‡è§¦å‘ start
 		elementHeader.onmousedown = Drag.start;
-		// ½« element ´æµ½ header µÄ obj ÀïÃæ£¬·½±ã header ÍÏ×§µÄÊ±ºòÒıÓÃ
+		// å°† element å­˜åˆ° header çš„ obj é‡Œé¢ï¼Œæ–¹ä¾¿ header æ‹–æ‹½çš„æ—¶å€™å¼•ç”¨
 		elementHeader.obj = element;
-		// ³õÊ¼»¯¾ø¶ÔµÄ×ø±ê£¬ÒòÎª²»ÊÇ position = absolute ËùÒÔ²»»áÆğÊ²Ã´×÷ÓÃ£¬µ«ÊÇ·ÀÖ¹ºóÃæ onDrag µÄÊ±ºò parse ³ö´íÁË
+		// åˆå§‹åŒ–ç»å¯¹çš„åæ ‡ï¼Œå› ä¸ºä¸æ˜¯ position = absolute æ‰€ä»¥ä¸ä¼šèµ·ä»€ä¹ˆä½œç”¨ï¼Œä½†æ˜¯é˜²æ­¢åé¢ onDrag çš„æ—¶å€™ parse å‡ºé”™äº†
 		if(isNaN(parseInt(element.style.left))) {
 			element.style.left = "0px";
 		}
 		if(isNaN(parseInt(element.style.top))) {
 			element.style.top = "0px";
 		}
-		// ¹ÒÉÏ¿Õ Function£¬³õÊ¼»¯Õâ¼¸¸ö³ÉÔ±£¬ÔÚ Drag.init ±»µ÷ÓÃºó²Å°ï¶¨µ½Êµ¼ÊµÄº¯Êı
+		// æŒ‚ä¸Šç©º Functionï¼Œåˆå§‹åŒ–è¿™å‡ ä¸ªæˆå‘˜ï¼Œåœ¨ Drag.init è¢«è°ƒç”¨åæ‰å¸®å®šåˆ°å®é™…çš„å‡½æ•°
 		element.onDragStart = new Function();
 		element.onDragEnd = new Function();
 		element.onDrag = new Function();
 	},
-	// ¿ªÊ¼ÍÏ×§µÄ°ó¶¨£¬°ó¶¨µ½Êó±êµÄÒÆ¶¯µÄ event ÉÏ
+	// å¼€å§‹æ‹–æ‹½çš„ç»‘å®šï¼Œç»‘å®šåˆ°é¼ æ ‡çš„ç§»åŠ¨çš„ event ä¸Š
 	start: function(event) {
 		var element = Drag.obj = this.obj;
-		// ½â¾ö²»Í¬ä¯ÀÀÆ÷µÄ event Ä£ĞÍ²»Í¬µÄÎÊÌâ
+		// è§£å†³ä¸åŒæµè§ˆå™¨çš„ event æ¨¡å‹ä¸åŒçš„é—®é¢˜
 		event = Drag.fixE(event);
-		// ¿´¿´ÊÇ²»ÊÇ×ó¼üµã»÷
+		// çœ‹çœ‹æ˜¯ä¸æ˜¯å·¦é”®ç‚¹å‡»
 		if(event.which != 1){
-			// ³ıÁË×ó¼ü¶¼²»Æğ×÷ÓÃ
+			// é™¤äº†å·¦é”®éƒ½ä¸èµ·ä½œç”¨
 			return true ;
 		}
-		// ²ÎÕÕÕâ¸öº¯ÊıµÄ½âÊÍ£¬¹ÒÉÏ¿ªÊ¼ÍÏ×§µÄ¹³×Ó
+		// å‚ç…§è¿™ä¸ªå‡½æ•°çš„è§£é‡Šï¼ŒæŒ‚ä¸Šå¼€å§‹æ‹–æ‹½çš„é’©å­
 		element.onDragStart();
-		// ¼ÇÂ¼Êó±ê×ø±ê
+		// è®°å½•é¼ æ ‡åæ ‡
 		element.lastMouseX = event.clientX;
 		element.lastMouseY = event.clientY;
-		// °ó¶¨ÊÂ¼ş
+		// ç»‘å®šäº‹ä»¶
 		document.onmouseup = Drag.end;
 		document.onmousemove = Drag.drag;
 		return false ;
 	}, 
-	// ElementÕıÔÚ±»ÍÏ¶¯µÄº¯Êı
+	// Elementæ­£åœ¨è¢«æ‹–åŠ¨çš„å‡½æ•°
 	drag: function(event) {
 		event = Drag.fixE(event);
 		if(event.which == 0 ) {
 		 	return Drag.end();
 		}
-		// ÕıÔÚ±»ÍÏ¶¯µÄElement
+		// æ­£åœ¨è¢«æ‹–åŠ¨çš„Element
 		var element = Drag.obj;
-		// Êó±ê×ø±ê
+		// é¼ æ ‡åæ ‡
 		var _clientX = event.clientY;
 		var _clientY = event.clientX;
-		// Èç¹ûÊó±êÃ»¶¯¾ÍÊ²Ã´¶¼²»×÷
+		// å¦‚æœé¼ æ ‡æ²¡åŠ¨å°±ä»€ä¹ˆéƒ½ä¸ä½œ
 		if(element.lastMouseX == _clientY && element.lastMouseY == _clientX) {
 			return	false ;
 		}
-		// ¸Õ²Å Element µÄ×ø±ê
+		// åˆšæ‰ Element çš„åæ ‡
 		var _lastX = parseInt(element.style.top);
 		var _lastY = parseInt(element.style.left);
-		// ĞÂµÄ×ø±ê
+		// æ–°çš„åæ ‡
 		var newX, newY;
-		// ¼ÆËãĞÂµÄ×ø±ê£ºÔ­ÏÈµÄ×ø±ê+Êó±êÒÆ¶¯µÄÖµ²î
+		// è®¡ç®—æ–°çš„åæ ‡ï¼šåŸå…ˆçš„åæ ‡+é¼ æ ‡ç§»åŠ¨çš„å€¼å·®
 		newX = _lastY + _clientY - element.lastMouseX;
 		newY = _lastX + _clientX - element.lastMouseY;
-		// ĞŞ¸Ä element µÄÏÔÊ¾×ø±ê
+		// ä¿®æ”¹ element çš„æ˜¾ç¤ºåæ ‡
 		element.style.left = newX + "px";
 		element.style.top = newY + "px";
-		// ¼ÇÂ¼ element ÏÖÔÚµÄ×ø±ê¹©ÏÂÒ»´ÎÒÆ¶¯Ê¹ÓÃ
+		// è®°å½• element ç°åœ¨çš„åæ ‡ä¾›ä¸‹ä¸€æ¬¡ç§»åŠ¨ä½¿ç”¨
 		element.lastMouseX = _clientY;
 		element.lastMouseY = _clientX;
-		// ²ÎÕÕÕâ¸öº¯ÊıµÄ½âÊÍ£¬¹Ò½ÓÉÏ Drag Ê±µÄ¹³×Ó
+		// å‚ç…§è¿™ä¸ªå‡½æ•°çš„è§£é‡Šï¼ŒæŒ‚æ¥ä¸Š Drag æ—¶çš„é’©å­
 		element.onDrag(newX, newY);
 		return false;
 	},
-	// Element ÕıÔÚ±»ÊÍ·ÅµÄº¯Êı£¬Í£Ö¹ÍÏ×§
+	// Element æ­£åœ¨è¢«é‡Šæ”¾çš„å‡½æ•°ï¼Œåœæ­¢æ‹–æ‹½
 	end: function(event) {
 		event = Drag.fixE(event);
-		// ½â³ıÊÂ¼ş°ó¶¨
+		// è§£é™¤äº‹ä»¶ç»‘å®š
 		document.onmousemove = null;
 		document.onmouseup = null;
-		// ÏÈ¼ÇÂ¼ÏÂ onDragEnd µÄ¹³×Ó£¬ºÃÒÆ³ı obj
+		// å…ˆè®°å½•ä¸‹ onDragEnd çš„é’©å­ï¼Œå¥½ç§»é™¤ obj
 		var _onDragEndFuc = Drag.obj.onDragEnd();
-		// ÍÏ×§Íê±Ï£¬obj Çå¿Õ
+		// æ‹–æ‹½å®Œæ¯•ï¼Œobj æ¸…ç©º
 		Drag.obj = null ;
 		return _onDragEndFuc;
 	},
-	// ½â¾ö²»Í¬ä¯ÀÀÆ÷µÄ event Ä£ĞÍ²»Í¬µÄÎÊÌâ
+	// è§£å†³ä¸åŒæµè§ˆå™¨çš„ event æ¨¡å‹ä¸åŒçš„é—®é¢˜
 	fixE: function(ig_) {
 		if( typeof ig_ == "undefined" ) {
 			ig_ = window.event;

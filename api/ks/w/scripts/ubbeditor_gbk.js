@@ -122,7 +122,7 @@ var UBBEditor = {
 		var menuFontSize = document.createElement("input");
 		menuFontSize.type = "button";
 		menuFontSize.id = "menuItemFontSize";
-		menuFontSize.title = "×ÖÌå´óĞ¡";
+		menuFontSize.title = "å­—ä½“å¤§å°";
 		menuFontSize.className = "UBB_MenuItem";
 		menuFontSize.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_size.gif" + "')";
 		this.Menu.appendChild(menuFontSize);
@@ -174,7 +174,7 @@ var UBBEditor = {
 		var menuBold = document.createElement("input");
 		menuBold.type = "button";
 		menuBold.id = "menuItemBold";
-		menuBold.title = "´ÖÌå";
+		menuBold.title = "ç²—ä½“";
 		menuBold.className = "UBB_MenuItem";
 		menuBold.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_bold.gif" + "')";
 		this.Menu.appendChild(menuBold);
@@ -187,7 +187,7 @@ var UBBEditor = {
 		var menuItalic = document.createElement("input");
 		menuItalic.type = "button";
 		menuItalic.id = "menuItemItalic";
-		menuItalic.title = "Ğ±Ìå";
+		menuItalic.title = "æ–œä½“";
 		menuItalic.className = "UBB_MenuItem";
 		menuItalic.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_italic.gif" + "')";
 		this.Menu.appendChild(menuItalic);
@@ -200,7 +200,7 @@ var UBBEditor = {
 		var menuUnderLine = document.createElement("input");
 		menuUnderLine.type = "button";
 		menuUnderLine.id = "menuItemUnderLine";
-		menuUnderLine.title = "ÏÂ»®Ïß";
+		menuUnderLine.title = "ä¸‹åˆ’çº¿";
 		menuUnderLine.className = "UBB_MenuItem";
 		menuUnderLine.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_underline.gif" + "')";
 		this.Menu.appendChild(menuUnderLine);
@@ -213,7 +213,7 @@ var UBBEditor = {
 		var menuDelete = document.createElement("input");
 		menuDelete.type = "button";
 		menuDelete.id = "menuItemDelete";
-		menuDelete.title = "É¾³ıÏß";
+		menuDelete.title = "åˆ é™¤çº¿";
 		menuDelete.className = "UBB_MenuItem";
 		menuDelete.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_delete.gif" + "')";
 		this.Menu.appendChild(menuDelete);
@@ -226,7 +226,7 @@ var UBBEditor = {
 		var menuColorList = document.createElement("input");
 		menuColorList.type = "button";
 		menuColorList.id = "menuItemColorList";
-		menuColorList.title = "×ÖÌåÑÕÉ«";
+		menuColorList.title = "å­—ä½“é¢œè‰²";
 		menuColorList.className = "UBB_MenuItem";
 		menuColorList.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_color.gif" + "')";
 		this.Menu.appendChild(menuColorList);
@@ -293,7 +293,7 @@ var UBBEditor = {
 		var menuCode = document.createElement("input");
 		menuCode.type = "button";
 		menuCode.id = "menuItemCodeList";
-		menuCode.title = "²åÈëÔ´´úÂë";
+		menuCode.title = "æ’å…¥æºä»£ç ";
 		menuCode.className = "UBB_MenuItem";
 		menuCode.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_code.gif" + "')";
 		this.Menu.appendChild(menuCode);
@@ -306,7 +306,7 @@ var UBBEditor = {
 		var menuQuote = document.createElement("input");
 		menuQuote.type = "button";
 		menuQuote.id = "menuItemQuoteList";
-		menuQuote.title = "²åÈëÒıÓÃ";
+		menuQuote.title = "æ’å…¥å¼•ç”¨";
 		menuQuote.className = "UBB_MenuItem";
 		menuQuote.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_quote.gif" + "')";
 		this.Menu.appendChild(menuQuote);
@@ -319,15 +319,15 @@ var UBBEditor = {
 		var menuInsertUrl = document.createElement("input");
 		menuInsertUrl.type = "button";
 		menuInsertUrl.id = "menuItemInsertUrl";
-		menuInsertUrl.title = "²åÈë³¬Á´½Ó";
+		menuInsertUrl.title = "æ’å…¥è¶…é“¾æ¥";
 		menuInsertUrl.className = "UBB_MenuItem";
 		menuInsertUrl.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_url.gif" + "')";
 		this.Menu.appendChild(menuInsertUrl);
 		var eid = this.TextId;
 		menuInsertUrl.onclick = function(){
-			var url = prompt("ÇëÊäÈë³¬Á´½ÓµØÖ·", "http://");
+			var url = prompt("è¯·è¾“å…¥è¶…é“¾æ¥åœ°å€", "http://");
 			if(url != null && url.indexOf("http://") < 0){
-				alert("ÇëÊäÈëÍêÕûµÄ³¬Á´½ÓµØÖ·£¡");
+				alert("è¯·è¾“å…¥å®Œæ•´çš„è¶…é“¾æ¥åœ°å€ï¼");
 				return;
 			}
 			if(url != null){
@@ -340,13 +340,13 @@ var UBBEditor = {
 		var menuInsertEmail = document.createElement("input");
 		menuInsertEmail.type = "button";
 		menuInsertEmail.id = "menuItemInsertEmail";
-		menuInsertEmail.title = "²åÈëEmail";
+		menuInsertEmail.title = "æ’å…¥Email";
 		menuInsertEmail.className = "UBB_MenuItem";
 		menuInsertEmail.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_email.gif" + "')";
 		this.Menu.appendChild(menuInsertEmail);
 		var eid = this.TextId;
 		menuInsertEmail.onclick = function(){
-			var mail = prompt("ÇëÊäÈëEmail£º", "");
+			var mail = prompt("è¯·è¾“å…¥Emailï¼š", "");
 			if(mail != null && !/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(mail))
 			{
 				return;
@@ -360,15 +360,15 @@ var UBBEditor = {
 		var menuInsertImage = document.createElement("input");
 		menuInsertImage.type = "button";
 		menuInsertImage.id = "menuItemInsertImage";
-		menuInsertImage.title = "²åÈëÍ¼Æ¬";
+		menuInsertImage.title = "æ’å…¥å›¾ç‰‡";
 		menuInsertImage.className = "UBB_MenuItem";
 		menuInsertImage.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_image.gif" + "')";
 		this.Menu.appendChild(menuInsertImage);
 		var eid = this.TextId;
 		menuInsertImage.onclick = function(){
-			var imgurl = prompt("ÇëÊäÈëÍ¼Æ¬Â·¾¶", "http://");
+			var imgurl = prompt("è¯·è¾“å…¥å›¾ç‰‡è·¯å¾„", "http://");
 			if(imgurl != null && imgurl.indexOf("http://") < 0){
-				alert("ÇëÊäÈëÍêÕûµÄÍ¼Æ¬Â·¾¶£¡");
+				alert("è¯·è¾“å…¥å®Œæ•´çš„å›¾ç‰‡è·¯å¾„ï¼");
 				return;
 			}
 			if(imgurl != null){
@@ -380,7 +380,7 @@ var UBBEditor = {
 		var menuAlignLeft = document.createElement("input");
 		menuAlignLeft.type = "button";
 		menuAlignLeft.id = "menuItemAlignLeft";
-		menuAlignLeft.title = "×ó¶ÔÆë";
+		menuAlignLeft.title = "å·¦å¯¹é½";
 		menuAlignLeft.className = "UBB_MenuItem";
 		menuAlignLeft.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_left.gif" + "')";
 		this.Menu.appendChild(menuAlignLeft);
@@ -393,7 +393,7 @@ var UBBEditor = {
 		var menuAlignCenter = document.createElement("input");
 		menuAlignCenter.type = "button";
 		menuAlignCenter.id = "menuItemAlignCenter";
-		menuAlignCenter.title = "¾ÓÖĞ¶ÔÆë";
+		menuAlignCenter.title = "å±…ä¸­å¯¹é½";
 		menuAlignCenter.className = "UBB_MenuItem";
 		menuAlignCenter.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_center.gif" + "')";
 		this.Menu.appendChild(menuAlignCenter);
@@ -406,7 +406,7 @@ var UBBEditor = {
 		var menuAlignRight = document.createElement("input");
 		menuAlignRight.type = "button";
 		menuAlignRight.id = "menuItemAlignRight";
-		menuAlignRight.title = "ÓÒ¶ÔÆë";
+		menuAlignRight.title = "å³å¯¹é½";
 		menuAlignRight.className = "UBB_MenuItem";
 		menuAlignRight.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_right.gif" + "')";
 		this.Menu.appendChild(menuAlignRight);
@@ -419,32 +419,32 @@ var UBBEditor = {
 		var menuSmileList = document.createElement("input");
 		menuSmileList.type = "button";
 		menuSmileList.id = "menuItemSmileList";
-		menuSmileList.title = "±íÇé";
+		menuSmileList.title = "è¡¨æƒ…";
 		menuSmileList.className = "UBB_MenuItem";
 		menuSmileList.style.backgroundImage = "url('" + this.siteUrl + "/images/ubb/bb_smile.gif" + "')";
 		this.Menu.appendChild(menuSmileList);
 
 		var smList = [];
-		smList.push(['/:O', '1.gif', '¾ªÑÈ']);
-		smList.push(['/:~', '2.gif', 'Æ²×ì']);
-		smList.push(['/:*', '3.gif', 'É«É«']);
-		smList.push(['/:|', '4.gif', '·¢´ô']);
-		smList.push(['/8-)', '5.gif', 'µÃÒâ']);
-		smList.push(['/:LL', '6.gif', 'Á÷Àá']);
-		smList.push(['/:$', '7.gif', 'º¦Ğß']);
-		smList.push(['/:X', '8.gif', '±Õ×ì']);
-		smList.push(['/:Z', '9.gif', 'Ë¯¾õ']);
-		smList.push(['/:`(', '10.gif', '´ó¿Ş']);
-		smList.push(['/:-', '11.gif', 'ŞÏŞÎ']);
-		smList.push(['/:@', '12.gif', '·¢Å­']);
-		smList.push(['/:P', '13.gif', 'µ÷Æ¤']);
-		smList.push(['/:D', '14.gif', 'ßÚÑÀ']);
-		smList.push(['/:)', '15.gif', 'Î¢Ğ¦']);
-		smList.push(['/:(', '16.gif', 'ÄÑ¹ı']);
-		smList.push(['/:+', '17.gif', 'Ë£¿á']);
-		smList.push(['/:#', '18.gif', '½ûÑÔ']);
-		smList.push(['/:Q', '19.gif', '×¥¿ñ']);
-		smList.push(['/:T', '20.gif', 'Å»ÍÂ']);
+		smList.push(['/:O', '1.gif', 'æƒŠè®¶']);
+		smList.push(['/:~', '2.gif', 'æ’‡å˜´']);
+		smList.push(['/:*', '3.gif', 'è‰²è‰²']);
+		smList.push(['/:|', '4.gif', 'å‘å‘†']);
+		smList.push(['/8-)', '5.gif', 'å¾—æ„']);
+		smList.push(['/:LL', '6.gif', 'æµæ³ª']);
+		smList.push(['/:$', '7.gif', 'å®³ç¾']);
+		smList.push(['/:X', '8.gif', 'é—­å˜´']);
+		smList.push(['/:Z', '9.gif', 'ç¡è§‰']);
+		smList.push(['/:`(', '10.gif', 'å¤§å“­']);
+		smList.push(['/:-', '11.gif', 'å°´å°¬']);
+		smList.push(['/:@', '12.gif', 'å‘æ€’']);
+		smList.push(['/:P', '13.gif', 'è°ƒçš®']);
+		smList.push(['/:D', '14.gif', 'å‘²ç‰™']);
+		smList.push(['/:)', '15.gif', 'å¾®ç¬‘']);
+		smList.push(['/:(', '16.gif', 'éš¾è¿‡']);
+		smList.push(['/:+', '17.gif', 'è€é…·']);
+		smList.push(['/:#', '18.gif', 'ç¦è¨€']);
+		smList.push(['/:Q', '19.gif', 'æŠ“ç‹‚']);
+		smList.push(['/:T', '20.gif', 'å‘•å']);
 
 		var smCol = 4;
 		var smTB = "<table border='0' cellpadding='0' cellspacing='" + smCol + "'>";
