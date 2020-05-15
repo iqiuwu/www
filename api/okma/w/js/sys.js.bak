@@ -136,8 +136,72 @@ function get_cookie_value(Name) {
 }
 
 function login(){
-	document.writeln('<script src="/loginframe.php"></script>');
+if(jieqiUserId != 0 && jieqiUserName != '' && (document.cookie.indexOf('PHPSESSID') != -1 || jieqiUserPassword != '')){
+  document.writeln('<ul><li><a href="/userdetail.php?uid='+jieqiUserId+'" target="_top">'+jieqiUserName+'</a></li><li>等级：'+jieqiUserGroupName+'</li><li>头衔：'+jieqiUserHonor+'</li><li><a href="/modules/article/bookcase.php?uid='+jieqiUserId+'" target="_top">我的书架</a></li> ');
+  if(jieqiNewMessage > 0){
+	document.write('<li><a class="new" href="/message.php?uid='+jieqiUserId+'&box=inbox" target="_top">您有短信</a></li>');
+  }else{
+	document.write('<li><a href="/message.php?uid='+jieqiUserId+'&box=inbox" target="_top">查看短信</a></li>');
+  }
+  document.write('<li><a href="/userdetail.php?uid='+jieqiUserId+'" target="_top">查看资料</a></li>');
+  document.write('<li><a href="/logout.php" target="_self">退出登录</a></li>');
+  document.write('</ul>');
+}else{
+  var jumpurl="";
+  if(location.href.indexOf("jumpurl") == -1){
+    jumpurl=location.href;
+  }
+document.writeln("<form name=\"frmlogin\" id=\"frmlogin\" method=\"post\" action=\"/login.php?do=submit&action=login&usecookie=2592000&jumpurl="+jumpurl+"&jumpreferer=1\">");
+document.writeln("<input type=\"text\" class=\"inp\" value=\"请输入帐号\" onFocus=\"this.style.color = \'#000000\';this.focus();if(this.value==\'请输入帐号\'){this.value=\'\';}\" onBlur=\"this.style.color = \'#d5d5d5\';if(this.value==\'\'){this.value=\'请输入帐号\';}\" onDblClick=\"javascript:this.value=\'\'\" name=\"username\" id=\"username\">");
+document.writeln("<input type=\"password\" class=\"inp\"  value=\"请输入密码\" onFocus=\"this.style.color = \'#000000\';this.focus();if(this.value==\'请输入密码\'){this.value=\'\';}\" onBlur=\"this.style.color = \'#d5d5d5\';if(this.value==\'\'){this.value=\'请输入密码\';}\" onDblClick=\"javascript:this.value=\'\'\" name=\"password\" id=\"password\">");
+document.writeln("<input class=\"int\" type=\"submit\" value=\"登陆\"><a href=\"/getpass.php\" title=\"忘记密码\">忘记密码</a> | <a href=\"/register.php\" title=\"用户注册\">用户注册</a></form>");
 }
+}
+
+//收藏本站
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+//设为首页
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+//本地搜索
+function sousuo(){
+document.writeln("<div class=\"search_box\">");
+document.writeln("<form id=\"Form1\" name=\"sform2\" method=\"get\" action=\"/modules/article/search.php\">");
+document.writeln("<input id=\"searchtype\" value=\"articlename\" name=\"searchtype\" type=\"hidden\">");
+document.writeln("<input name=\"searchkey\" type=\"text\" id=\"searchkey\" class=\"input\" onfocus=\"if (value ==\'请输入小说名或作者来搜索，千万别输错字！\'){value =\'\';style.color=\'#000\'}\" onBlur=\"if (value ==\'\'){value=\'请输入小说名或作者来搜索，千万别输错字！\';style.color=\'#000\'}\" value=\"请输入小说名或作者来搜索，千万别输错字！\">");
+document.writeln("<input type=\"submit\"  value=\"搜索\" class=\"btn_search\">");
+document.writeln("</form>");
+document.write('</div>');
+}
+
+
 
 //简繁体
 String.prototype.format = function(){ 
