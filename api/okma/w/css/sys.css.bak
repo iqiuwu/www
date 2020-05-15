@@ -1,0 +1,88 @@
+*{margin:0;padding:0;list-style:none;}
+img{border:0;}
+body{font-size:12px;font-family: "Microsoft YaHei","微软雅黑","宋体";background-color:#d3d3d1;color:#333;}
+a{color:#333;text-decoration:none;outline:none;}
+a:hover{color:#336600;}
+.main,.grid{width:965px;margin:0px auto;clear:both;overflow:hidden;}
+.lf{float:left;}
+.rt{float:right;}
+
+/*阅读页*/
+.yd_ad{width:965px;margin:5px auto;overflow:hidden;}
+.yd_ad span{float:left;padding-left:15px;display:block;}
+.read_t{width:958px;height:35px;line-height:35px;margin:0 auto;overflow:hidden;}
+.read_t span{float:right;}
+.read_b{width:958px;margin:0px auto;border:1px solid #dee1e6;border-top:2px solid #208181;height:35px;padding-top:10px;}
+.read_b .shuqian{float:left;padding-left:5px;}
+.read_b .shuqian a{display:block;float:left;text-align:center;margin-right:10px;color:#fff;line-height:23px;border-radius:3px;height:23px;width:70px;background-color:#208181;border:1px solid #208181;}
+.read_b .shuqian a:hover{background-color:#ce6535;border:1px solid #d98b65;}
+.read_b .input{height:23px;width:33px;line-height:23px;border:1px solid #dee1e6;text-align:center;float:left;}
+.read_b .vote{float:left;padding-left:5px;}
+.read_b .vote a{display:block;text-align:center;color:#fff;line-height:23px;border-radius:3px;height:23px;width:45px;background-color:#ce6535;border:1px solid #d98b65;}
+.read_b .vote a:hover{background-color:#208181;border:1px solid #208181;}
+.novel{width:928px;padding:15px;margin:0px auto;overflow:hidden;border:1px solid #dee1e6;text-align:center;font-size:18px;}
+.novel .yd_text2{line-height:50px;text-align:left;overflow:hidden;}
+.novel .divimage{text-align:center;}
+.novel h1{font-size:24px;color:#000;line-height:45px;height:45px;}
+.novel .pereview{margin:10px auto;clear:both;overflow:hidden;width:366px;}
+.novel .pereview a{float:left;display:block;width:110px;height:28px;line-height:28px;margin:5px;background-color:#f8f8f8; border:1px solid #d9d9d9;color:#666;font-size:14px;}
+.novel .pereview a:hover{background-color:#dff1ff}
+.novel .aside{height:30px;line-height:30px; border-bottom:1px dotted #dee1e6;font-size:14px;}
+.novel .aside a{padding-left:5px;color:#cc0000;font-weight:bold;}
+.novel .yd_ad1{padding:10px;}
+.readacbtn{text-align:center;margin:10px auto;width:710px;height:43px;overflow:hidden;}
+.readacbtn a{text-indent:-9000px;display:block;background:url(images/readacbtn.png) no-repeat left top;float:left;height:43px;margin-right:20px;}
+.readacbtn a.recommend{width:257px}
+.readacbtn a.favorite{width:243px;background-position:-258px 50%}
+.readacbtn a.bookshelf{width:146px;background-position:right top}
+
+/*阅读页背景插件*/
+.bgs{float:right;position:relative;}
+.bgs ul{position:relative;float:left;width:60px;border:1px solid #ddd;margin-right:6px;line-height:20px;height:20px;}
+.bgs li{width:60px;overflow:hidden;line-height:20px;} 
+.bgs .textm{width:55px;height:20px;position:absolute;left:0;top:0;border:0px;padding:0px;background:#fff;line-height:20px;cursor:default;padding-left:5px;}
+.bgs .select{border-top:1px solid #ddd;background:#fff;position:absolute;top:20px;display:none;z-index:9999;}
+.bgs .select p{padding-left:5px;line-height:20px;height:20px;overflow:hidden;border:1px solid #ddd;border-top:0px;cursor:pointer; position:relative;}
+.bgs .btn{position:absolute;width:18px;height:22px;right:-1px;top:-1px;display:inline-block;background: url(images/ydbg.gif) no-repeat -48px 0;}
+.ud_but1,.ud_but2,.ud_but11,.ud_but22{float:left;text-align:center;width:44px;height:22px;line-height:22px;border:0px;margin-right:6px;cursor:pointer;}
+.ud_but1{background:url(images/ydbg.gif) no-repeat 0px -24px;color:#000;}
+.ud_but11{background:url(images/ydbg.gif) no-repeat 0px -48px;color:#ff6600;}
+.ud_but2{background:url(images/ydbg.gif) no-repeat;color:#fff;}
+.ud_but22{background:url(images/ydbg.gif) no-repeat 0px -72px;color:#fff;}
+/*背景颜色*/
+.bg_huang{background:#FFFFED}
+.bg_lan{background:#E9FAFF;}
+.bg_lv{background:#efffeb;}
+.bg_fen{background:#FCEFFF;}
+.bg_bai{background:#fff;}
+.bg_hui{background:#efefef;}
+.bg_hei{background:#000;}
+.bg_cao{background:#CCE8CF;}
+.bg_cha{background:#D2B48C;}
+.bg_yin{background:#E7F4FE;}
+.bg_mi{background:#F5F5DC;}
+/*字体大小*/
+.fon_12 {font-size:12px;}
+.fon_14 {font-size:14px;}
+.fon_16 {font-size:16px;}
+.fon_18 {font-size:18px;}
+.fon_20 {font-size:20px;}
+.fon_24 {font-size:24px;}
+.fon_30 {font-size:30px;}
+/*字体颜色*/
+.z_hei {color:#000;}
+.z_hui{color:#666;}
+.z_red {color:#ff0000;}
+.z_lan {color:#0066CC;}
+.z_lan {color:#0066CC;}
+.z_lv {color:#22b600;}
+.z_li {color:#800000;}
+.z_wu {color:#F5F5F5;}
+.z_zi {color:#9370DB;}
+.z_he {color:#BC8F8F;}
+/*字体样式*/
+.fam_song{font-family:宋体;}
+.fam_hei{font-family:黑体;}
+.fam_kai{font-family:楷体_GB2312;}
+.fam_qi{font-family:方正启体简体;}
+.fam_ya{font-family:微软雅黑;}

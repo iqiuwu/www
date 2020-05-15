@@ -139,9 +139,9 @@ function showbook(){
 			var __17mb_sid = parseInt(books[i][0]/1000);
 
 			bookhtml+='<div class="book-item">';
-			bookhtml+='<a class="book-a"  href="/read/'+books[i][0]+'/'+books[i][1]+'.html" >';
+			bookhtml+='<a class="book-a"  href="/article/'+__17mb_sid+'/'+books[i][0]+'/'+books[i][1]+'.html" >';
 			bookhtml+='<div class="book-box">';
-			bookhtml+='<img src="'+__17mb_pcurl+'/files/article/image/'+__17mb_sid+'/'+books[i][0]+'/'+books[i][0]+'s.jpg" alt="">';
+			bookhtml+='<img src="'+__17mb_pcurl+'/image/'+__17mb_sid+'/'+books[i][0]+'/'+books[i][0]+'s.jpg" alt="">';
 			bookhtml+='</div>';
 			bookhtml+='<div class="book-info">';
 			bookhtml+='<div class="chapter-item">';
