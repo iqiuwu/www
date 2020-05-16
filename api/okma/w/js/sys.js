@@ -35,7 +35,7 @@ function __x_tj(){//统计代码
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f1b30417e65c4a5b0749dafafe49897c";
+  hm.src = "https://hm.baidu.com/hm.js?545700dadf1da6b6fca27f78f4301682";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
