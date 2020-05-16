@@ -383,7 +383,7 @@ ul.list li p{line-height: 25px; color:#333}
 .place{width:990px;margin:10px auto ;clear:both;overflow:hidden;}
 .place h2{display:inline;font-size:12px;font-weight:normal;}
 .booklist{width:990px;border:1px solid #dee1e6;margin:0 auto 20px;overflow:hidden;}
-.booklist h1{background-color:#82bebe;font-size:14px;font-weight:bold;height:40px;line-height:40px;text-indent:23px;color:#208181;}
+.booklist h1{background-color:#82bebe;font-size:14px;font-weight:bold;height:40px;line-height:40px;text-indent:23px;color:#333;}
 .booklist ul{padding:10px;}
 .booklist li.t{font-weight:bold;color:#444;height:30px;line-height:30px;}
 .booklist li{height:35px;line-height:35px;border-bottom:1px dotted #dee1e6;}

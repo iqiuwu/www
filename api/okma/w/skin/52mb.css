@@ -249,7 +249,7 @@ h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
 #readerlist ul li a:hover{color:#208181;text-decoration:none}
 #readerlist ul li a:visited{color:#949494}
 #readerlist .short_block{float:left;width:941px;line-height:25px;padding-left:10px;}
-.readerts{border:1px solid #ddd;background:#fff;margin:0 auto;width:978px;position:relative;height:60px;padding-left:10px;color:#949494;line-height:20px;}
+.readerts{border:1px solid #ddd;background:#fff;margin:0 auto;width:978px;position:relative;padding-left:10px;color:#949494;line-height:20px;}
 .readerts h4{color:#f60;padding-top:10px}
 .border-line{margin-top:1px;border-top:1px solid #d8d8d8;padding-top:3px;}
 
