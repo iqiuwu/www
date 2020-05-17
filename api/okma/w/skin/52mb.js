@@ -31,17 +31,17 @@ function ctype(){
 	var seartype = document.getElementById("seartype");
 	var seartype2 = document.getElementById("seartype2");
 	if(seartype){
-		if(seartype.innerHTML == "ÊéÃû"){
-			seartype.innerHTML = "×÷Õß";
+		if(seartype.innerHTML == "ä¹¦å"){
+			seartype.innerHTML = "ä½œè€…";
 			seartype2.value = "author";
 		}
 		else{
-			seartype.innerHTML = "ÊéÃû";
+			seartype.innerHTML = "ä¹¦å";
 			seartype2.value = "articlename";
 		}
 	}
 }
-// »ñÈ¡cookie
+// è·å–cookie
 function getCookie(Name){
 	var search = Name + "="
 	var returnvalue = "";
@@ -57,9 +57,9 @@ function getCookie(Name){
 	} 
 	return returnvalue;
 }
-// ±£´æcookie
+// ä¿å­˜cookie
 function SetCookie(name,value){
-    var Days = 30; //´Ë cookie ½«±»±£´æ 30 Ìì
+    var Days = 30; //æ­¤ cookie å°†è¢«ä¿å­˜ 30 å¤©
     var Then = new Date();
     Then.setTime(Then.getTime() + Days*24*60*60*1000); 
     document.cookie = name + "="+ escape (value) + ";expires=" + Then.toGMTString()+ ";path=/;";
@@ -84,14 +84,14 @@ function SetCookie(name,value){
             },
             addBookMark:function(){
                 var sURL = "http://www.xxx.com/";
-                var sTitle = "ÍøÕ¾±êÌâ";
+                var sTitle = "ç½‘ç«™æ ‡é¢˜";
                 try{
                     window.external.addFavorite(sURL, sTitle);
                 }catch (e){
                     try{
                         window.sidebar.addPanel(sTitle, sURL, "");
                     }catch (e){
-                        alert("¼ÓÈëÊÕ²ØÊ§°Ü£¬ÇëÊ¹ÓÃCtrl+D½øĞĞÌí¼Ó");
+                        alert("åŠ å…¥æ”¶è—å¤±è´¥ï¼Œè¯·ä½¿ç”¨Ctrl+Dè¿›è¡Œæ·»åŠ ");
                     }
                 }
             },
@@ -101,7 +101,7 @@ function SetCookie(name,value){
                     document.body.style.behavior='url(#default#homepage)';
                     document.body.setHomePage(url);
                 }else{
-                    alert("´Ë²Ù×÷±»ä¯ÀÀÆ÷¾Ü¾ø,ÇëÄúÊÖ¶¯ÔÚä¯ÀÀÆ÷ÀïÉèÖÃ¸ÃÒ³ÃæÎªÊ×Ò³£¡");
+                    alert("æ­¤æ“ä½œè¢«æµè§ˆå™¨æ‹’ç»,è¯·æ‚¨æ‰‹åŠ¨åœ¨æµè§ˆå™¨é‡Œè®¾ç½®è¯¥é¡µé¢ä¸ºé¦–é¡µï¼");
                 }
             },
             read:{
@@ -109,12 +109,12 @@ function SetCookie(name,value){
                 init:function(){
                     var _self = this;
                     var colorbg = [
-                        {c:'#fff',t:'°×É«'},
-                        {c:'#fffec0',t:'µ°»Æ'},
-                        {c:'#efe5db',t:'¿¨Æä'},
-                        {c:'#ffe7e7',t:'·Ûºì'},
-                        {c:'#f2f2f2',t:'Àä»Ò'},
-                        {c:'#e7f4fe',t:'±ÌÔÆ'}];
+                        {c:'#fff',t:'ç™½è‰²'},
+                        {c:'#fffec0',t:'è›‹é»„'},
+                        {c:'#efe5db',t:'å¡å…¶'},
+                        {c:'#ffe7e7',t:'ç²‰çº¢'},
+                        {c:'#f2f2f2',t:'å†·ç°'},
+                        {c:'#e7f4fe',t:'ç¢§äº‘'}];
                         $(document).bind('click',function(e){
                             var tid = e.target.id;
                             if(tid == "select_color" || tid== "select_size" || tid== "select_family"){
@@ -122,18 +122,18 @@ function SetCookie(name,value){
                             $('.text_bg,.text_bg2,.text_bg3').addClass('hidden');
                         }
                         });
-                    //¶ÁÈ¡ÑÕÉ«Öµ
+                    //è¯»å–é¢œè‰²å€¼
                     var cookie_color = getCookie('read_color') || 5;
                     $('#select_color_txt em').text(colorbg[cookie_color].t);
                     $('#container').css('background-color',colorbg[cookie_color].c);
-                    //¹¹½¨Ñ¡Ôñ½á¹¹  ±£³ÖÒ»¸öÊµÀı
+                    //æ„å»ºé€‰æ‹©ç»“æ„  ä¿æŒä¸€ä¸ªå®ä¾‹
                     var _tmp1 = [];
                     for(var i =0;i<colorbg.length;i++){
                     	var sel = cookie_color==i?"class=selected":"";
                     	_tmp1.push('<li '+sel+'><span class="square" style="background-color:'+colorbg[i].c+';"></span>'+colorbg[i].t+'</li>');
                     }
                     $('.text_bg ul').append(_tmp1.join(""));
-                    //°ó¶¨ÊÂ¼ş
+                    //ç»‘å®šäº‹ä»¶
                     $('#select_color').click(function(){
                         $(".text_bg").toggleClass('hidden');
                         $(".text_bg2").addClass('hidden');
@@ -153,18 +153,18 @@ function SetCookie(name,value){
                         $('#container').css('background-color',colorbg[index].c);
                         SetCookie('read_color',index);
                     });
-                    //ÎÄ×ÖÉèÖÃ
+                    //æ–‡å­—è®¾ç½®
                     var sizes = [20,22,24,26,28,30,32];
                     var cookie_font = getCookie('read_font') || 2;
-                    $('#select_size_txt em').text(sizes[cookie_font]+'ºÅÎÄ×Ö');
+                    $('#select_size_txt em').text(sizes[cookie_font]+'å·æ–‡å­—');
                     $('#content').css('font-size',sizes[cookie_font]+"px");
                     var _tmp2 = [];
                     for(var i =0;i<sizes.length;i++){
                         var sel = cookie_font==i?"class=selected":"";
-                        _tmp2.push('<li '+sel+'><span class="square_size" style="font-size:'+sizes[i]+'px;">¦¡</span>'+sizes[i]+'ºÅ</li>');
+                        _tmp2.push('<li '+sel+'><span class="square_size" style="font-size:'+sizes[i]+'px;">Î‘</span>'+sizes[i]+'å·</li>');
                     }
                     $('.text_bg2 ul').append(_tmp2.join(""));
-                    //°ó¶¨ÊÂ¼ş
+                    //ç»‘å®šäº‹ä»¶
                     $('#select_size').click(function(){
                         $(".text_bg2").toggleClass('hidden');
                         $(".text_bg").addClass('hidden');
@@ -180,26 +180,26 @@ function SetCookie(name,value){
                         $('.text_bg2 li').removeClass('selected');
                         $(this).addClass('selected');
                         $(".text_bg2").addClass('hidden');
-                        $('#select_size_txt em').text(sizes[index]+'ºÅÎÄ×Ö');
+                        $('#select_size_txt em').text(sizes[index]+'å·æ–‡å­—');
                         $('#content').css('font-size',sizes[index]+"px");
                         SetCookie('read_font',index);
                     });			
                     var family = [
-                    {c:'ËÎÌå',t:'ËÎÌå'},
-                    {c:'ºÚÌå',t:'ºÚÌå'},
-                    {c:'»ªÎÄ¿¬Ìå',t:'¿¬Ìå'},
-                    {c:'Î¢ÈíÑÅºÚ',t:'ÑÅºÚ'},
-                    {c:'·½ÕıÆôÌå¼òÌå',t:'ÆôÌå'}];				
+                    {c:'å®‹ä½“',t:'å®‹ä½“'},
+                    {c:'é»‘ä½“',t:'é»‘ä½“'},
+                    {c:'åæ–‡æ¥·ä½“',t:'æ¥·ä½“'},
+                    {c:'å¾®è½¯é›…é»‘',t:'é›…é»‘'},
+                    {c:'æ–¹æ­£å¯ä½“ç®€ä½“',t:'å¯ä½“'}];				
                     var cookie_family = getCookie('read_family') || 4;
                     $('#select_family_txt em').text(family[cookie_family].t);
                     $('#content').css('font-family',family[cookie_family].c);
                     var _tmp3 = [];
                     for(var i =0;i<family.length;i++){
                         var sel = cookie_family==i?"class=selected":"";
-                        _tmp3.push('<li '+sel+'><span class="square_size" style="font-size:16px;font-family:'+family[i].c+';">Ãî</span>'+family[i].t+'</li>');
+                        _tmp3.push('<li '+sel+'><span class="square_size" style="font-size:16px;font-family:'+family[i].c+';">å¦™</span>'+family[i].t+'</li>');
                     }
                     $('.text_bg3 ul').append(_tmp3.join(""));
-                    //°ó¶¨ÊÂ¼ş
+                    //ç»‘å®šäº‹ä»¶
                     $('#select_family').click(function(){
                         $(".text_bg3").toggleClass('hidden');
                         $(".text_bg2").addClass('hidden');
@@ -219,7 +219,7 @@ function SetCookie(name,value){
                         $('#content').css('font-family',family[index].c);
                         SetCookie('read_family',index);
                     });
-                    //ÆÁ±ÎÊó±êÓÒ¼ü
+                    //å±è”½é¼ æ ‡å³é”®
                     //$(document).bind("contextmenu selectstart",function(event){
                     //    return false;
                     //});
@@ -229,8 +229,8 @@ function SetCookie(name,value){
                 show:function(txt,id,id_t){
                     var isIe=(document.all)?true:false;
                     $(id_t).text(txt);
-                    var Box=document.getElementById(id);//»ñÈ¡²ãµÄ¶ÔÏó 
-                    Box.style.display="block";//ÉèÖÃ²ãÎªÏÔÊ¾
+                    var Box=document.getElementById(id);//è·å–å±‚çš„å¯¹è±¡ 
+                    Box.style.display="block";//è®¾ç½®å±‚ä¸ºæ˜¾ç¤º
                     Box.style.top = Box.style.left = "50%";
                     Box.style.marginTop = - Box.offsetHeight/2 + "px";
                     Box.style.marginLeft =  - Box.offsetWidth/2 + "px";
@@ -238,8 +238,8 @@ function SetCookie(name,value){
             },
             win:{
                 close:function(id){
-                    var off_win=document.getElementById(id);//»ñÈ¡²ãµÄ¶ÔÏó 
-                    off_win.style.display="none";//ÉèÖÃ²ãÎªÒş²Ø 
+                    var off_win=document.getElementById(id);//è·å–å±‚çš„å¯¹è±¡ 
+                    off_win.style.display="none";//è®¾ç½®å±‚ä¸ºéšè— 
                 },
                 login:function(){
                     miaobi.box.show('#login_win');

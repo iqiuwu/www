@@ -5,7 +5,7 @@ window.onerror = killerrors;
 
 //jieqi common
 
-//È¡µÃÒ»¸ö¶ÔÏó£¬Ïàµ±ÓÚgetElementById()
+//å–å¾—ä¸€ä¸ªå¯¹è±¡ï¼Œç›¸å½“äºgetElementById()
 function GetObjcet() {
   var elements = new Array();
   for (var i = 0; i < arguments.length; i++) {
@@ -18,14 +18,14 @@ function GetObjcet() {
   return elements;
 }
 
-//°ÑËü½ÓÊÕµ½µÄµ¥¸öµÄ²ÎÊı×ª»»³ÉÒ»¸öArray¶ÔÏó¡£
+//æŠŠå®ƒæ¥æ”¶åˆ°çš„å•ä¸ªçš„å‚æ•°è½¬æ¢æˆä¸€ä¸ªArrayå¯¹è±¡ã€‚
 function GetObjcetA(list){
 	var arr = [];
 	for (var i=0,len=list.length; i<len; i++){arr[i] = list[i];}
 	return arr;
 }
 
-//³£ÓÃº¯ÊıÀ©Õ¹
+//å¸¸ç”¨å‡½æ•°æ‰©å±•
 var Method = {
 	Element	: function(){
 		this.hide = function(){this.style.display="none"; return this;};
@@ -57,9 +57,9 @@ var Method = {
 Method.Array.apply(Array.prototype);
 Method.String.apply(String.prototype);
 
-//formÏà¹Øº¯Êı
+//formç›¸å…³å‡½æ•°
 var Form = {
-	//°Ñ±í¸ñÄÚÈİ×ª»¯³Éstring
+	//æŠŠè¡¨æ ¼å†…å®¹è½¬åŒ–æˆstring
   serialize: function(form) {
     var elements = Form.getElements($(form));
     var queryComponents = new Array();
@@ -69,7 +69,7 @@ var Form = {
     }
     return queryComponents.join('&');
   },
-  //È¡µÃ±íµ¥ÄÚÈİÎªÊı×éĞÎÊ½
+  //å–å¾—è¡¨å•å†…å®¹ä¸ºæ•°ç»„å½¢å¼
   getElements: function(form) {
     form = $(form);
     var elements = new Array();
@@ -80,7 +80,7 @@ var Form = {
     }
     return elements;
   },
-  //disable±íµ¥ËùÓĞÄÚÈİ
+  //disableè¡¨å•æ‰€æœ‰å†…å®¹
   disable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -89,7 +89,7 @@ var Form = {
       element.disabled = 'true';
     }
   },
-  //enable±íµ¥ËùÓĞÄÚÈİ
+  //enableè¡¨å•æ‰€æœ‰å†…å®¹
   enable: function(form) {
     var elements = Form.getElements(form);
     for (var i = 0; i < elements.length; i++) {
@@ -97,13 +97,13 @@ var Form = {
       element.disabled = '';
     }
   },
-  //Reset±íµ¥
+  //Resetè¡¨å•
   reset: function(form) {
     $(form).reset();
   }
 }
 
-//formÀïÃæÔªËØ¶¨Òå
+//formé‡Œé¢å…ƒç´ å®šä¹‰
 Form.Element = {
   serialize: function(element) {
     element = $(element);
@@ -181,10 +181,10 @@ Form.Element.Serializers = {
   }
 }
 
-//È¡formÀïÃæÎï¼şµÄÖµ£¬µÈÍ¬ÓÚForm.Element.getValue()
+//å–formé‡Œé¢ç‰©ä»¶çš„å€¼ï¼Œç­‰åŒäºForm.Element.getValue()
 var $F = Form.Element.getValue;
 
-//ajax´¦Àí
+//ajaxå¤„ç†
 function jieqi_ajax() {
 	this.init = function() {
 		this.handler = null;
@@ -421,7 +421,7 @@ var Ajax = {
 	}
 }
 
-//³£ÓÃ¹¦ÄÜº¯Êı
+//å¸¸ç”¨åŠŸèƒ½å‡½æ•°
 function pageWidth(){
 	return window.innerWidth != null ? window.innerWidth : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
 }
@@ -562,7 +562,7 @@ function loadJs(url){
 	}
 }
 
-//Í¨ÓÃ¹¦ÄÜ
+//é€šç”¨åŠŸèƒ½
 function GetObj(objName){
 	if(document.getElementById){
 		return eval('document.getElementById("' + objName + '")');
@@ -572,41 +572,41 @@ function GetObj(objName){
 		return eval('document.all.' + objName);
 	}
 }
-//tabÇĞ»»
+//tabåˆ‡æ¢
 function showTab(cid,no) 
 {
 	
 	for (var i = 1; i < 10; i++){
-		var tt = GetObj(cid + "_" + i);//Çø¿éÒş²Ø
+		var tt = GetObj(cid + "_" + i);//åŒºå—éšè—
 		if (tt != null) {
 			tt.style.display = 'none';
 		}
 		else{
 			break;
 		}
-		var oo = GetObj(cid + i);//°´Å¥»Ö¸´
+		var oo = GetObj(cid + i);//æŒ‰é’®æ¢å¤
 		if (oo!= null){
 			oo.className = '';
 		}
 	}
 
-	var tt = GetObj(cid + "_" + no);//Çø¿éÏÔÊ¾
+	var tt = GetObj(cid + "_" + no);//åŒºå—æ˜¾ç¤º
 	if (tt != null) {
 			tt.style.display = 'block';
 	}
-	var oo = GetObj(cid + no);//°´Å¥±äÉ«
+	var oo = GetObj(cid + no);//æŒ‰é’®å˜è‰²
 	if (oo!= null) 	{
 			oo.className = 'on';
 	}
 
 }
-//ÍË³öÊéÇ©
+//é€€å‡ºä¹¦ç­¾
 function bookmark()
 {
 if(readCookie("bookmark")!="yes") 
 {
 saveCookie("bookmark","yes",1);
-window.external.AddFavorite('http://www.uctxt.com', 'UCµç×ÓÊé');
+window.external.AddFavorite('http://www.uctxt.com', 'UCç”µå­ä¹¦');
 }
 }
 
@@ -630,14 +630,14 @@ function readCookie(name) {
      return null
 }
 
-//Í¶Æ±
+//æŠ•ç¥¨
 function vote(id)
 {
 	url="/modules/article/uservote.php?id="+id;
 	
 	Ajax.Request(url,{onComplete:function(){displayDialog(this.response.replace(/<br[^<>]*>/g,'\n'));}});
 }
-//ÊéÇ©
+//ä¹¦ç­¾
 function addbookcase(bid,cid)
 {
 	
@@ -645,10 +645,10 @@ function addbookcase(bid,cid)
 	Ajax.Request(url,{onComplete:function(){displayDialog(this.response.replace(/<br[^<>]*>/g,'\n'));}});
 	//Ajax.Tip(event,url,3000);
 }
-//´íÎó¾Ù±¨
+//é”™è¯¯ä¸¾æŠ¥
 function report(title)
 {
-	url="/newmessage.php?tosys=1&title="+title+"&content="+top.window.location.href+"%0D%0A%0D%0A¾Ù±¨Ô­ÒòÈçÏÂ£º"
+	url="/newmessage.php?tosys=1&title="+title+"&content="+top.window.location.href+"%0D%0A%0D%0Aä¸¾æŠ¥åŸå› å¦‚ä¸‹ï¼š"
 	window.open(url);
 	//openDialog(url,1)
 }
@@ -664,21 +664,21 @@ function addfriend(uid)
 	Ajax.Tip(event,url,3000);
 }
 
-//ÓÃ»§
+//ç”¨æˆ·
 function get_cookie_value(Name) { 
   var search = Name + "=";
-¡¡var returnvalue = ""; 
-¡¡if (document.cookie.length > 0) { 
-¡¡  offset = document.cookie.indexOf(search) 
-¡¡¡¡if (offset != -1) { 
-¡¡¡¡  offset += search.length 
-¡¡¡¡  end = document.cookie.indexOf(";", offset); 
-¡¡¡¡  if (end == -1) 
-¡¡¡¡  end = document.cookie.length; 
-¡¡¡¡  returnvalue=unescape(document.cookie.substring(offset, end));
-¡¡¡¡} 
-¡¡} 
-¡¡return returnvalue; 
+ã€€var returnvalue = ""; 
+ã€€if (document.cookie.length > 0) { 
+ã€€  offset = document.cookie.indexOf(search) 
+ã€€ã€€if (offset != -1) { 
+ã€€ã€€  offset += search.length 
+ã€€ã€€  end = document.cookie.indexOf(";", offset); 
+ã€€ã€€  if (end == -1) 
+ã€€ã€€  end = document.cookie.length; 
+ã€€ã€€  returnvalue=unescape(document.cookie.substring(offset, end));
+ã€€ã€€} 
+ã€€} 
+ã€€return returnvalue; 
 }
 
 function user(){
@@ -717,33 +717,33 @@ if(document.cookie.indexOf('jieqiUserInfo') >= 0){
 }
 	
 if(jieqiUserId != 0 && jieqiUserName != '' && (document.cookie.indexOf('PHPSESSID') != -1 || jieqiUserPassword != '')){
-  document.write('»¶Ó­Äú£¡ '+jieqiUserName+'&nbsp;&nbsp;<a href="/modules/article/bookcase.php" target="_top">ÎÒµÄÊé¼Ü</a>');
+  document.write('æ¬¢è¿æ‚¨ï¼ '+jieqiUserName+'&nbsp;&nbsp;<a href="/modules/article/bookcase.php" target="_top">æˆ‘çš„ä¹¦æ¶</a>');
   if(jieqiNewMessage > 0){
-	  document.write(' | <a href="/message.php?box=inbox" target="_top" class="red">ÄúÓĞ¶ÌĞÅ</a>');
+	  document.write(' | <a href="/message.php?box=inbox" target="_top" class="red">æ‚¨æœ‰çŸ­ä¿¡</a>');
   }else{
-	  document.write(' | <a href="/message.php?box=inbox" target="_top">²é¿´¶ÌĞÅ</a>');
+	  document.write(' | <a href="/message.php?box=inbox" target="_top">æŸ¥çœ‹çŸ­ä¿¡</a>');
   }
-  document.write(' | <a href="/logout.php" target="_self">ÍË³öµÇÂ½</a>');
+  document.write(' | <a href="/logout.php" target="_self">é€€å‡ºç™»é™†</a>');
 }else{
   var jumpurl="";
   if(location.href.indexOf("jumpurl") == -1){
     jumpurl=location.href;
   }
-  document.write('<a href="/login.php" target="_top">»áÔ±µÇÂ½</a>&nbsp;©®&nbsp;<a href="/register.php" target="_top">ÓÃ»§×¢²á</a>');
+  document.write('<a href="/login.php" target="_top">ä¼šå‘˜ç™»é™†</a>&nbsp;â”Š&nbsp;<a href="/register.php" target="_top">ç”¨æˆ·æ³¨å†Œ</a>');
 }
 
 }
 
-//¸Ä±äÔÄ¶Á±³¾°¡¢×ÖÌå´óĞ¡ºÍÑÕÉ«µÄjavascript
+//æ”¹å˜é˜…è¯»èƒŒæ™¯ã€å­—ä½“å¤§å°å’Œé¢œè‰²çš„javascript
 var ReadSet = {
 	bgcolor : ["#e7f4fe", "#ffffed", "#efefef", "#fcefff", "#ffffff", "#eefaee"],
-	bgcname : ["µ­À¶º£Ñó", "Ã÷»Æµ­ÑÅ", "»ÒÉ«ÊÀ½ç", "ºì·ÛÊÀ¼Ò", "°×Ñ©ÌìµØ", "ÂÌÒâ´ºÉ«"],
+	bgcname : ["æ·¡è“æµ·æ´‹", "æ˜é»„æ·¡é›…", "ç°è‰²ä¸–ç•Œ", "çº¢ç²‰ä¸–å®¶", "ç™½é›ªå¤©åœ°", "ç»¿æ„æ˜¥è‰²"],
 	bgcvalue : "#e7f4fe",
 	fontcolor : ["#333333", "#ff0000", "#008000", "#ffc0cb", "#0000ff", "#ffffff"],
-	fontcname : ["ºÚÉ«", "ºìÉ«", "ÂÌÉ«", "·ÛÉ«", "À¶É«", "°×É«"],
+	fontcname : ["é»‘è‰²", "çº¢è‰²", "ç»¿è‰²", "ç²‰è‰²", "è“è‰²", "ç™½è‰²"],
 	fontcvalue : "#333333",
 	fontsize : ["14px", "18px", "20px", "24px", "28px"],
-	fontsname : ["ºÜĞ¡", "½ÏĞ¡", "ÖĞµÈ", "½Ï´ó", "ºÜ´ó"],
+	fontsname : ["å¾ˆå°", "è¾ƒå°", "ä¸­ç­‰", "è¾ƒå¤§", "å¾ˆå¤§"],
 	fontsvalue : "20px",
 	contentid : "BookCon",
     fontsizeid : "BookText",
@@ -789,15 +789,15 @@ var ReadSet = {
 	Show : function(){
 		var output;
 		output = '<div class="readSet">';
-		output += '<span class="rc">ÔÄ¶Á±³¾°:</span>';
+		output += '<span class="rc">é˜…è¯»èƒŒæ™¯:</span>';
 		for(i=0; i<this.bgcolor.length; i++){
 			output += '<a style="background-color: '+this.bgcolor[i]+'" class="ra" title="'+this.bgcname[i]+'" onclick="ReadSet.SetBgcolor(\''+this.bgcolor[i]+'\')" href="javascript:;"></a>';
 		}
-		output += '<span class="rc">×ÖÌåÑÕÉ«:</span>';
+		output += '<span class="rc">å­—ä½“é¢œè‰²:</span>';
 		for(i=0; i<this.fontcolor.length; i++){
 			output += '<a style="background-color: '+this.fontcolor[i]+'" class="ra" title="'+this.fontcname[i]+'" onclick="ReadSet.SetFontcolor(\''+this.fontcolor[i]+'\')" href="javascript:;"></a>';
 		}
-		output += '<span class="rc">×ÖÌå´óĞ¡:</span><span class="rf">[';
+		output += '<span class="rc">å­—ä½“å¤§å°:</span><span class="rf">[';
 		for(i=0; i<this.fontsize.length; i++){
 			output += '<a class="rt" onclick="ReadSet.SetFontsize(\''+this.fontsize[i]+'\')" href="javascript:;">'+this.fontsname[i]+'</a>';
 		}
